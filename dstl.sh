@@ -1,7 +1,7 @@
 all_tasks=bbh,truthfulqa,agieval,mmlu,ifeval,arc_easy,arc_challenge,hellaswag,openbookqa,piqa,social_iqa,winogrande,wikitext,gpqa,minerva_math,gsm8k,humaneval,mbpp
 
 HF_ALLOW_CODE_EVAL="1" CUDA_VISIBLE_DEVICES=0,1,2,3 nohup lm_eval --model sglang \
-    --model_args pretrained=meta-llama/Llama-3.2-3B-Instruct,dtype=auto,port=12330,tp_size=4 \
+    --model_args pretrained=meta-llama/Llama-3.2-3B-Instruct,dtype=auto,port=12330,tp_size=4,mem_fraction_static=0.7 \
     --tasks $all_tasks \
     --batch_size 1 \
     --cache_requests refresh \

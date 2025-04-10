@@ -2,7 +2,7 @@ all_tasks=bbh,truthfulqa,agieval,mmlu,ifeval,arc_easy,arc_challenge,hellaswag,op
 
 CUDA_VISIBLE_DEVICES=0 nohup lm_eval --model vllm \
     --model_args pretrained=meta-llama/Llama-3.2-3B-Instruct,dtype=auto \
-    --tasks $tasks \
+    --tasks $all_tasks \
     --batch_size auto \
     --cache_requests refresh \
     --num_fewshot 0 \
@@ -11,7 +11,7 @@ CUDA_VISIBLE_DEVICES=0 nohup lm_eval --model vllm \
 
 CUDA_VISIBLE_DEVICES=1 nohup lm_eval --model vllm \
     --model_args pretrained=meta-llama/Llama-3.2-1B-Instruct,dtype=auto \
-    --tasks $tasks \
+    --tasks $all_tasks \
     --batch_size auto \
     --cache_requests refresh \
     --num_fewshot 0 \
@@ -20,7 +20,7 @@ CUDA_VISIBLE_DEVICES=1 nohup lm_eval --model vllm \
 
 CUDA_VISIBLE_DEVICES=2 nohup lm_eval --model vllm \
     --model_args pretrained=meta-llama/Llama-3.1-8B-Instruct,dtype=auto \
-    --tasks $tasks \
+    --tasks $all_tasks \
     --batch_size auto \
     --cache_requests refresh \
     --num_fewshot 0 \
@@ -29,7 +29,7 @@ CUDA_VISIBLE_DEVICES=2 nohup lm_eval --model vllm \
 
 CUDA_VISIBLE_DEVICES=3 nohup lm_eval --model vllm \
     --model_args pretrained=google/gemma-3-1b-it,dtype=auto \
-    --tasks $tasks \
+    --tasks $all_tasks \
     --batch_size auto \
     --cache_requests refresh \
     --num_fewshot 0 \
@@ -38,7 +38,7 @@ CUDA_VISIBLE_DEVICES=3 nohup lm_eval --model vllm \
 
 CUDA_VISIBLE_DEVICES=4 nohup lm_eval --model vllm \
     --model_args pretrained=google/gemma-3-4b-it,dtype=auto \
-    --tasks $tasks \
+    --tasks $all_tasks \
     --batch_size auto \
     --cache_requests refresh \
     --num_fewshot 0 \

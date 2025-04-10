@@ -1,4 +1,4 @@
-all_tasks=bbh,truthfulqa,agieval,mmlu,ifeval,arc_easy,arc_challenge,hellaswag,openbookqa,piqa,social_iqa,winogrande,wikitext,gpqa,minerva_math,gsm8k_yaml,humaneval,mbpp
+all_tasks=bbh,truthfulqa,agieval,mmlu,ifeval,arc_easy,arc_challenge,hellaswag,openbookqa,piqa,social_iqa,winogrande,wikitext,gpqa,minerva_math,gsm8k,humaneval,mbpp
 
 CUDA_VISIBLE_DEVICES=0 nohup lm_eval --model vllm \
     --model_args pretrained=meta-llama/Llama-3.2-3B-Instruct,dtype=auto \

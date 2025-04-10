@@ -1,6 +1,6 @@
 all_tasks=bbh,truthfulqa,agieval,mmlu,ifeval,arc_easy,arc_challenge,hellaswag,openbookqa,piqa,social_iqa,winogrande,wikitext,gpqa,minerva_math,gsm8k,humaneval,mbpp
 
-HF_ALLOW_CODE_EVAL="1" CUDA_VISIBLE_DEVICES=0,1,2,3 nohup lm_eval --model vllm \
+HF_ALLOW_CODE_EVAL="1" CUDA_VISIBLE_DEVICES=0 nohup lm_eval --model vllm \
     --model_args pretrained=meta-llama/Llama-3.2-3B-Instruct,port=12330,gpu_memory_utilization=0.8 \
     --tasks $all_tasks \
     --batch_size 1 \

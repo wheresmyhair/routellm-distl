@@ -2,21 +2,21 @@
 
 # --- 配置 ---
 # 1. 定义任务列表 (使用 Bash 数组)
+    # bbh
+    # truthfulqa
+    # agieval
+    # mmlu
+    # ifeval
+    # arc_easy
+    # arc_challenge
+    # hellaswag
+    # openbookqa
+    # piqa
+    # social_iqa
+    # winogrande
+    # wikitext
+    # gpqa
 tasks=(
-    bbh
-    truthfulqa
-    agieval
-    mmlu
-    ifeval
-    arc_easy
-    arc_challenge
-    hellaswag
-    openbookqa
-    piqa
-    social_iqa
-    winogrande
-    wikitext
-    gpqa
     minerva_math
     gsm8k
     humaneval  # Code generation often benefits from batch_size=1
@@ -44,10 +44,10 @@ declare -A task_batch_sizes=(
     [winogrande]=128
     [wikitext]=128
     [gpqa]=1
-    [minerva_math]=1
-    [gsm8k]=1
-    [humaneval]=1
-    [mbpp]=1
+    [minerva_math]=32
+    [gsm8k]=32
+    [humaneval]=32
+    [mbpp]=32
 )
 
 # 4. 定义默认 Batch Size (用于未在上面明确指定的任务)
@@ -82,7 +82,7 @@ for task in "${tasks[@]}"; do
     mkdir -p "$TASK_OUTPUT_DIR" # 确保任务子目录存在
 
     # 构建当前任务的 lm_eval 命令 (使用 current_batch_size)
-    command="lm_eval --model hf \
+    command="lm_eval --model vllm \
         --model_args pretrained=$MODEL_NAME \
         --tasks $task \
         --batch_size $current_batch_size \

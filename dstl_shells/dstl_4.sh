@@ -27,7 +27,7 @@ tasks=(
 MODEL_NAME="google/gemma-3-1b-it"
 NUM_FEWSHOT=0
 BASE_OUTPUT_DIR="/mnt/yizhenjia3/routellm-distl/allres_detailed/gemma3-1b" # 基础输出目录
-DEVICE_ID=0
+DEVICE_ID=4
 
 # 3. 定义任务特定的 Batch Size (使用 Associative Array)
 #    Key: task name, Value: desired batch size

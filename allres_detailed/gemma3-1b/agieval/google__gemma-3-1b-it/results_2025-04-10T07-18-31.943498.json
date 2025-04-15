@@ -1,0 +1,1177 @@
+{
+  "results": {
+    "agieval": {
+      "acc,none": 0.290396710208031,
+      "acc_stderr,none": 0.004722164524665457,
+      "alias": "agieval"
+    },
+    "agieval_aqua_rat": {
+      "alias": " - agieval_aqua_rat",
+      "acc,none": 0.24015748031496062,
+      "acc_stderr,none": 0.026856511194355226,
+      "acc_norm,none": 0.25196850393700787,
+      "acc_norm_stderr,none": 0.027294353392553605
+    },
+    "agieval_gaokao_biology": {
+      "alias": " - agieval_gaokao_biology",
+      "acc,none": 0.3,
+      "acc_stderr,none": 0.03169833889962088,
+      "acc_norm,none": 0.3476190476190476,
+      "acc_norm_stderr,none": 0.032940430891650836
+    },
+    "agieval_gaokao_chemistry": {
+      "alias": " - agieval_gaokao_chemistry",
+      "acc,none": 0.25120772946859904,
+      "acc_stderr,none": 0.030217850292985324,
+      "acc_norm,none": 0.2560386473429952,
+      "acc_norm_stderr,none": 0.030408453922393275
+    },
+    "agieval_gaokao_chinese": {
+      "alias": " - agieval_gaokao_chinese",
+      "acc,none": 0.24796747967479674,
+      "acc_stderr,none": 0.02758878866485416,
+      "acc_norm,none": 0.25609756097560976,
+      "acc_norm_stderr,none": 0.027885450835842332
+    },
+    "agieval_gaokao_english": {
+      "alias": " - agieval_gaokao_english",
+      "acc,none": 0.4117647058823529,
+      "acc_stderr,none": 0.02818059632825929,
+      "acc_norm,none": 0.4411764705882353,
+      "acc_norm_stderr,none": 0.028431095444176643
+    },
+    "agieval_gaokao_geography": {
+      "alias": " - agieval_gaokao_geography",
+      "acc,none": 0.3015075376884422,
+      "acc_stderr,none": 0.03261349587454653,
+      "acc_norm,none": 0.3015075376884422,
+      "acc_norm_stderr,none": 0.03261349587454653
+    },
+    "agieval_gaokao_history": {
+      "alias": " - agieval_gaokao_history",
+      "acc,none": 0.2851063829787234,
+      "acc_stderr,none": 0.029513196625539355,
+      "acc_norm,none": 0.28085106382978725,
+      "acc_norm_stderr,none": 0.029379170464124818
+    },
+    "agieval_gaokao_mathcloze": {
+      "alias": " - agieval_gaokao_mathcloze",
+      "acc,none": 0.01694915254237288,
+      "acc_stderr,none": 0.011933533435676647
+    },
+    "agieval_gaokao_mathqa": {
+      "alias": " - agieval_gaokao_mathqa",
+      "acc,none": 0.25071225071225073,
+      "acc_stderr,none": 0.023167441319665312,
+      "acc_norm,none": 0.2678062678062678,
+      "acc_norm_stderr,none": 0.02366951449378029
+    },
+    "agieval_gaokao_physics": {
+      "alias": " - agieval_gaokao_physics",
+      "acc,none": 0.355,
+      "acc_stderr,none": 0.033920910080708536,
+      "acc_norm,none": 0.32,
+      "acc_norm_stderr,none": 0.03306761764450864
+    },
+    "agieval_jec_qa_ca": {
+      "alias": " - agieval_jec_qa_ca",
+      "acc,none": 0.4724724724724725,
+      "acc_stderr,none": 0.015803218617280186,
+      "acc_norm,none": 0.4774774774774775,
+      "acc_norm_stderr,none": 0.015811158130322724
+    },
+    "agieval_jec_qa_kd": {
+      "alias": " - agieval_jec_qa_kd",
+      "acc,none": 0.51,
+      "acc_stderr,none": 0.01581613575277321,
+      "acc_norm,none": 0.492,
+      "acc_norm_stderr,none": 0.015817274929209004
+    },
+    "agieval_logiqa_en": {
+      "alias": " - agieval_logiqa_en",
+      "acc,none": 0.2411674347158218,
+      "acc_stderr,none": 0.016779369344911064,
+      "acc_norm,none": 0.27956989247311825,
+      "acc_norm_stderr,none": 0.017602909186822453
+    },
+    "agieval_logiqa_zh": {
+      "alias": " - agieval_logiqa_zh",
+      "acc,none": 0.21812596006144394,
+      "acc_stderr,none": 0.01619814925841932,
+      "acc_norm,none": 0.271889400921659,
+      "acc_norm_stderr,none": 0.017451716009436836
+    },
+    "agieval_lsat_ar": {
+      "alias": " - agieval_lsat_ar",
+      "acc,none": 0.21739130434782608,
+      "acc_stderr,none": 0.02725685083881996,
+      "acc_norm,none": 0.20434782608695654,
+      "acc_norm_stderr,none": 0.026645808150011344
+    },
+    "agieval_lsat_lr": {
+      "alias": " - agieval_lsat_lr",
+      "acc,none": 0.2196078431372549,
+      "acc_stderr,none": 0.018349383611423235,
+      "acc_norm,none": 0.2372549019607843,
+      "acc_norm_stderr,none": 0.018855515858847986
+    },
+    "agieval_lsat_rc": {
+      "alias": " - agieval_lsat_rc",
+      "acc,none": 0.24535315985130113,
+      "acc_stderr,none": 0.026284535689763012,
+      "acc_norm,none": 0.26022304832713755,
+      "acc_norm_stderr,none": 0.02680130130545777
+    },
+    "agieval_math": {
+      "alias": " - agieval_math",
+      "acc,none": 0.027,
+      "acc_stderr,none": 0.005128089049275288
+    },
+    "agieval_sat_en": {
+      "alias": " - agieval_sat_en",
+      "acc,none": 0.46116504854368934,
+      "acc_stderr,none": 0.03481602144131184,
+      "acc_norm,none": 0.4077669902912621,
+      "acc_norm_stderr,none": 0.034322222902602624
+    },
+    "agieval_sat_en_without_passage": {
+      "alias": " - agieval_sat_en_without_passage",
+      "acc,none": 0.3300970873786408,
+      "acc_stderr,none": 0.03284353151466849,
+      "acc_norm,none": 0.28640776699029125,
+      "acc_norm_stderr,none": 0.03157479374421759
+    },
+    "agieval_sat_math": {
+      "alias": " - agieval_sat_math",
+      "acc,none": 0.2318181818181818,
+      "acc_stderr,none": 0.02851567800741112,
+      "acc_norm,none": 0.20909090909090908,
+      "acc_norm_stderr,none": 0.027479498445640484
+    }
+  },
+  "groups": {
+    "agieval": {
+      "acc,none": 0.290396710208031,
+      "acc_stderr,none": 0.004722164524665457,
+      "alias": "agieval"
+    }
+  },
+  "group_subtasks": {
+    "agieval": [
+      "agieval_gaokao_biology",
+      "agieval_gaokao_chemistry",
+      "agieval_gaokao_chinese",
+      "agieval_gaokao_geography",
+      "agieval_gaokao_history",
+      "agieval_gaokao_mathcloze",
+      "agieval_gaokao_mathqa",
+      "agieval_gaokao_physics",
+      "agieval_jec_qa_ca",
+      "agieval_jec_qa_kd",
+      "agieval_logiqa_zh",
+      "agieval_aqua_rat",
+      "agieval_gaokao_english",
+      "agieval_logiqa_en",
+      "agieval_lsat_ar",
+      "agieval_lsat_lr",
+      "agieval_lsat_rc",
+      "agieval_math",
+      "agieval_sat_en_without_passage",
+      "agieval_sat_en",
+      "agieval_sat_math"
+    ]
+  },
+  "configs": {
+    "agieval_aqua_rat": {
+      "task": "agieval_aqua_rat",
+      "dataset_path": "hails/agieval-aqua-rat",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_gaokao_biology": {
+      "task": "agieval_gaokao_biology",
+      "dataset_path": "hails/agieval-gaokao-biology",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_gaokao_chemistry": {
+      "task": "agieval_gaokao_chemistry",
+      "dataset_path": "hails/agieval-gaokao-chemistry",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_gaokao_chinese": {
+      "task": "agieval_gaokao_chinese",
+      "dataset_path": "hails/agieval-gaokao-chinese",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_gaokao_english": {
+      "task": "agieval_gaokao_english",
+      "dataset_path": "hails/agieval-gaokao-english",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_gaokao_geography": {
+      "task": "agieval_gaokao_geography",
+      "dataset_path": "hails/agieval-gaokao-geography",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_gaokao_history": {
+      "task": "agieval_gaokao_history",
+      "dataset_path": "hails/agieval-gaokao-history",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_gaokao_mathcloze": {
+      "task": "agieval_gaokao_mathcloze",
+      "dataset_path": "hails/agieval-gaokao-mathcloze",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    candidate = results[0]\n\n    gold = doc[\"answer\"]\n\n    if not gold:\n        print(doc, candidate, gold)\n    if is_equiv(candidate, gold):\n        retval = 1\n    else:\n        retval = 0\n\n    results = {\n        \"acc\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_gen_toks": 32,
+        "do_sample": false,
+        "temperature": 0.0,
+        "until": [
+          "Q:"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_gaokao_mathqa": {
+      "task": "agieval_gaokao_mathqa",
+      "dataset_path": "hails/agieval-gaokao-mathqa",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_gaokao_physics": {
+      "task": "agieval_gaokao_physics",
+      "dataset_path": "hails/agieval-gaokao-physics",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_jec_qa_ca": {
+      "task": "agieval_jec_qa_ca",
+      "dataset_path": "hails/agieval-jec-qa-ca",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_jec_qa_kd": {
+      "task": "agieval_jec_qa_kd",
+      "dataset_path": "hails/agieval-jec-qa-kd",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_logiqa_en": {
+      "task": "agieval_logiqa_en",
+      "dataset_path": "hails/agieval-logiqa-en",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_logiqa_zh": {
+      "task": "agieval_logiqa_zh",
+      "dataset_path": "hails/agieval-logiqa-zh",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_lsat_ar": {
+      "task": "agieval_lsat_ar",
+      "dataset_path": "hails/agieval-lsat-ar",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_lsat_lr": {
+      "task": "agieval_lsat_lr",
+      "dataset_path": "hails/agieval-lsat-lr",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_lsat_rc": {
+      "task": "agieval_lsat_rc",
+      "dataset_path": "hails/agieval-lsat-rc",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_math": {
+      "task": "agieval_math",
+      "dataset_path": "hails/agieval-math",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{answer}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    candidate = results[0]\n\n    gold = doc[\"answer\"]\n\n    if not gold:\n        print(doc, candidate, gold)\n    if is_equiv(candidate, gold):\n        retval = 1\n    else:\n        retval = 0\n\n    results = {\n        \"acc\": retval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_gen_toks": 32,
+        "do_sample": false,
+        "temperature": 0.0,
+        "until": [
+          "Q:"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_sat_en": {
+      "task": "agieval_sat_en",
+      "dataset_path": "hails/agieval-sat-en",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_sat_en_without_passage": {
+      "task": "agieval_sat_en_without_passage",
+      "dataset_path": "hails/agieval-sat-en-without-passage",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    },
+    "agieval_sat_math": {
+      "task": "agieval_sat_math",
+      "dataset_path": "hails/agieval-sat-math",
+      "test_split": "test",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{gold}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices}}",
+      "process_results": "def process_results_mcqa(doc, results):\n    results = [result[0] for result in results]\n\n    gold = doc[\"gold\"]\n\n    acc = 1.0 if int(np.argmax(results)) in gold else 0.0\n    completion_len = np.array([float(len(i)) for i in doc[\"choices\"]])\n    acc_norm = 1.0 if int(np.argmax(results / completion_len)) in gold else 0.0\n\n    return {\n        \"acc\": acc,\n        \"acc_norm\": acc_norm,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "google/gemma-3-1b-it"
+      }
+    }
+  },
+  "versions": {
+    "agieval": 0.0,
+    "agieval_aqua_rat": 1.0,
+    "agieval_gaokao_biology": 1.0,
+    "agieval_gaokao_chemistry": 1.0,
+    "agieval_gaokao_chinese": 1.0,
+    "agieval_gaokao_english": 1.0,
+    "agieval_gaokao_geography": 1.0,
+    "agieval_gaokao_history": 1.0,
+    "agieval_gaokao_mathcloze": 1.0,
+    "agieval_gaokao_mathqa": 1.0,
+    "agieval_gaokao_physics": 1.0,
+    "agieval_jec_qa_ca": 1.0,
+    "agieval_jec_qa_kd": 1.0,
+    "agieval_logiqa_en": 1.0,
+    "agieval_logiqa_zh": 1.0,
+    "agieval_lsat_ar": 1.0,
+    "agieval_lsat_lr": 1.0,
+    "agieval_lsat_rc": 1.0,
+    "agieval_math": 1.0,
+    "agieval_sat_en": 1.0,
+    "agieval_sat_en_without_passage": 1.0,
+    "agieval_sat_math": 1.0
+  },
+  "n-shot": {
+    "agieval_aqua_rat": 0,
+    "agieval_gaokao_biology": 0,
+    "agieval_gaokao_chemistry": 0,
+    "agieval_gaokao_chinese": 0,
+    "agieval_gaokao_english": 0,
+    "agieval_gaokao_geography": 0,
+    "agieval_gaokao_history": 0,
+    "agieval_gaokao_mathcloze": 0,
+    "agieval_gaokao_mathqa": 0,
+    "agieval_gaokao_physics": 0,
+    "agieval_jec_qa_ca": 0,
+    "agieval_jec_qa_kd": 0,
+    "agieval_logiqa_en": 0,
+    "agieval_logiqa_zh": 0,
+    "agieval_lsat_ar": 0,
+    "agieval_lsat_lr": 0,
+    "agieval_lsat_rc": 0,
+    "agieval_math": 0,
+    "agieval_sat_en": 0,
+    "agieval_sat_en_without_passage": 0,
+    "agieval_sat_math": 0
+  },
+  "higher_is_better": {
+    "agieval": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_aqua_rat": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_gaokao_biology": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_gaokao_chemistry": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_gaokao_chinese": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_gaokao_english": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_gaokao_geography": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_gaokao_history": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_gaokao_mathcloze": {
+      "acc": true
+    },
+    "agieval_gaokao_mathqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_gaokao_physics": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_jec_qa_ca": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_jec_qa_kd": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_logiqa_en": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_logiqa_zh": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_lsat_ar": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_lsat_lr": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_lsat_rc": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_math": {
+      "acc": true
+    },
+    "agieval_sat_en": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_sat_en_without_passage": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "agieval_sat_math": {
+      "acc": true,
+      "acc_norm": true
+    }
+  },
+  "n-samples": {
+    "agieval_gaokao_biology": {
+      "original": 210,
+      "effective": 210
+    },
+    "agieval_gaokao_chemistry": {
+      "original": 207,
+      "effective": 207
+    },
+    "agieval_gaokao_chinese": {
+      "original": 246,
+      "effective": 246
+    },
+    "agieval_gaokao_geography": {
+      "original": 199,
+      "effective": 199
+    },
+    "agieval_gaokao_history": {
+      "original": 235,
+      "effective": 235
+    },
+    "agieval_gaokao_mathcloze": {
+      "original": 118,
+      "effective": 118
+    },
+    "agieval_gaokao_mathqa": {
+      "original": 351,
+      "effective": 351
+    },
+    "agieval_gaokao_physics": {
+      "original": 200,
+      "effective": 200
+    },
+    "agieval_jec_qa_ca": {
+      "original": 999,
+      "effective": 999
+    },
+    "agieval_jec_qa_kd": {
+      "original": 1000,
+      "effective": 1000
+    },
+    "agieval_logiqa_zh": {
+      "original": 651,
+      "effective": 651
+    },
+    "agieval_aqua_rat": {
+      "original": 254,
+      "effective": 254
+    },
+    "agieval_gaokao_english": {
+      "original": 306,
+      "effective": 306
+    },
+    "agieval_logiqa_en": {
+      "original": 651,
+      "effective": 651
+    },
+    "agieval_lsat_ar": {
+      "original": 230,
+      "effective": 230
+    },
+    "agieval_lsat_lr": {
+      "original": 510,
+      "effective": 510
+    },
+    "agieval_lsat_rc": {
+      "original": 269,
+      "effective": 269
+    },
+    "agieval_math": {
+      "original": 1000,
+      "effective": 1000
+    },
+    "agieval_sat_en_without_passage": {
+      "original": 206,
+      "effective": 206
+    },
+    "agieval_sat_en": {
+      "original": 206,
+      "effective": 206
+    },
+    "agieval_sat_math": {
+      "original": 220,
+      "effective": 220
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=google/gemma-3-1b-it",
+    "model_num_parameters": 999885952,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "dcc83ea841ab6100d6b47a070329e1ba4cf78752",
+    "batch_size": "16",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "a9691f4a",
+  "date": 1744294492.7696059,
+  "pretty_env_info": "PyTorch version: 2.6.0+cu124\nIs debug build: False\nCUDA used to build PyTorch: 12.4\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.4 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0\nClang version: Could not collect\nCMake version: version 3.22.1\nLibc version: glibc-2.35\n\nPython version: 3.10.16 (main, Dec 11 2024, 16:24:50) [GCC 11.2.0] (64-bit runtime)\nPython platform: Linux-5.15.0-1053-nvidia-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: 12.4.131\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: \nGPU 0: NVIDIA H100 80GB HBM3\nGPU 1: NVIDIA H100 80GB HBM3\nGPU 2: NVIDIA H100 80GB HBM3\nGPU 3: NVIDIA H100 80GB HBM3\nGPU 4: NVIDIA H100 80GB HBM3\nGPU 5: NVIDIA H100 80GB HBM3\nGPU 6: NVIDIA H100 80GB HBM3\nGPU 7: NVIDIA H100 80GB HBM3\n\nNvidia driver version: 535.161.08\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:                       x86_64\nCPU op-mode(s):                     32-bit, 64-bit\nAddress sizes:                      52 bits physical, 57 bits virtual\nByte Order:                         Little Endian\nCPU(s):                             224\nOn-line CPU(s) list:                0-223\nVendor ID:                          GenuineIntel\nModel name:                         Intel(R) Xeon(R) Platinum 8480CL\nCPU family:                         6\nModel:                              143\nThread(s) per core:                 2\nCore(s) per socket:                 56\nSocket(s):                          2\nStepping:                           7\nCPU max MHz:                        3800.0000\nCPU min MHz:                        800.0000\nBogoMIPS:                           4000.00\nFlags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nL1d cache:                          5.3 MiB (112 instances)\nL1i cache:                          3.5 MiB (112 instances)\nL2 cache:                           224 MiB (112 instances)\nL3 cache:                           210 MiB (2 instances)\nNUMA node(s):                       2\nNUMA node0 CPU(s):                  0-55,112-167\nNUMA node1 CPU(s):                  56-111,168-223\nVulnerability Gather data sampling: Not affected\nVulnerability Itlb multihit:        Not affected\nVulnerability L1tf:                 Not affected\nVulnerability Mds:                  Not affected\nVulnerability Meltdown:             Not affected\nVulnerability Mmio stale data:      Not affected\nVulnerability Retbleed:             Not affected\nVulnerability Spec rstack overflow: Not affected\nVulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:           Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence\nVulnerability Srbds:                Not affected\nVulnerability Tsx async abort:      Not affected\n\nVersions of relevant libraries:\n[pip3] flashinfer-python==0.2.3+cu124torch2.5\n[pip3] numpy==2.1.3\n[pip3] nvidia-cublas-cu12==12.4.5.8\n[pip3] nvidia-cuda-cupti-cu12==12.4.127\n[pip3] nvidia-cuda-nvrtc-cu12==12.4.127\n[pip3] nvidia-cuda-runtime-cu12==12.4.127\n[pip3] nvidia-cudnn-cu12==9.1.0.70\n[pip3] nvidia-cufft-cu12==11.2.1.3\n[pip3] nvidia-curand-cu12==10.3.5.147\n[pip3] nvidia-cusolver-cu12==11.6.1.9\n[pip3] nvidia-cusparse-cu12==12.3.1.170\n[pip3] nvidia-cusparselt-cu12==0.6.2\n[pip3] nvidia-nccl-cu12==2.21.5\n[pip3] nvidia-nvjitlink-cu12==12.4.127\n[pip3] nvidia-nvtx-cu12==12.4.127\n[pip3] torch==2.6.0\n[pip3] torchao==0.10.0\n[pip3] torchaudio==2.6.0\n[pip3] torchvision==0.21.0\n[pip3] triton==3.2.0\n[conda] cuda-cudart               12.4.127             h99ab3db_0  \n[conda] cuda-cudart-dev           12.4.127             h99ab3db_0  \n[conda] cuda-cudart-dev_linux-64  12.4.127             hd681fbe_0  \n[conda] cuda-cudart-static        12.4.127             h99ab3db_0  \n[conda] cuda-cudart-static_linux-64 12.4.127             hd681fbe_0  \n[conda] cuda-cudart_linux-64      12.4.127             hd681fbe_0  \n[conda] cuda-cupti                12.4.127             h6a678d5_1  \n[conda] cuda-cupti-dev            12.4.127             h6a678d5_1  \n[conda] cuda-libraries            12.4.1               h06a4308_1  \n[conda] cuda-libraries-dev        12.4.1               h06a4308_1  \n[conda] cuda-nvrtc                12.4.127             h99ab3db_1  \n[conda] cuda-nvrtc-dev            12.4.127             h99ab3db_1  \n[conda] cuda-nvtx                 12.4.127             h6a678d5_1  \n[conda] cuda-opencl               12.4.127             h6a678d5_0  \n[conda] cuda-opencl-dev           12.4.127             h6a678d5_0  \n[conda] flashinfer-python         0.2.3+cu124torch2.5          pypi_0    pypi\n[conda] libcublas                 12.4.5.8             h99ab3db_1  \n[conda] libcublas-dev             12.4.5.8             h99ab3db_1  \n[conda] libcufft                  11.2.1.3             h99ab3db_1  \n[conda] libcufft-dev              11.2.1.3             h99ab3db_1  \n[conda] libcurand                 10.3.5.147           h99ab3db_1  \n[conda] libcurand-dev             10.3.5.147           h99ab3db_1  \n[conda] libcusolver               11.6.1.9             h99ab3db_1  \n[conda] libcusolver-dev           11.6.1.9             h99ab3db_1  \n[conda] libcusparse               12.3.1.170           h99ab3db_1  \n[conda] libcusparse-dev           12.3.1.170           h99ab3db_1  \n[conda] libnvjitlink              12.4.127             h99ab3db_1  \n[conda] libnvjitlink-dev          12.4.127             h99ab3db_1  \n[conda] numpy                     2.1.3                    pypi_0    pypi\n[conda] nvidia-cublas-cu12        12.4.5.8                 pypi_0    pypi\n[conda] nvidia-cuda-cupti-cu12    12.4.127                 pypi_0    pypi\n[conda] nvidia-cuda-nvrtc-cu12    12.4.127                 pypi_0    pypi\n[conda] nvidia-cuda-runtime-cu12  12.4.127                 pypi_0    pypi\n[conda] nvidia-cudnn-cu12         9.1.0.70                 pypi_0    pypi\n[conda] nvidia-cufft-cu12         11.2.1.3                 pypi_0    pypi\n[conda] nvidia-curand-cu12        10.3.5.147               pypi_0    pypi\n[conda] nvidia-cusolver-cu12      11.6.1.9                 pypi_0    pypi\n[conda] nvidia-cusparse-cu12      12.3.1.170               pypi_0    pypi\n[conda] nvidia-cusparselt-cu12    0.6.2                    pypi_0    pypi\n[conda] nvidia-nccl-cu12          2.21.5                   pypi_0    pypi\n[conda] nvidia-nvjitlink-cu12     12.4.127                 pypi_0    pypi\n[conda] nvidia-nvtx-cu12          12.4.127                 pypi_0    pypi\n[conda] torch                     2.6.0                    pypi_0    pypi\n[conda] torchao                   0.10.0                   pypi_0    pypi\n[conda] torchaudio                2.6.0                    pypi_0    pypi\n[conda] torchvision               0.21.0                   pypi_0    pypi\n[conda] triton                    3.2.0                    pypi_0    pypi",
+  "transformers_version": "4.51.1",
+  "lm_eval_version": "0.4.8",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<pad>",
+    "0"
+  ],
+  "tokenizer_eos_token": [
+    "<eos>",
+    "1"
+  ],
+  "tokenizer_bos_token": [
+    "<bos>",
+    "2"
+  ],
+  "eot_token_id": 1,
+  "max_length": 32768,
+  "task_hashes": {
+    "agieval_gaokao_biology": "48856850a9c3cb2bdd072c002e182cf4dc1270c513df1b196c07cd50c35ee312",
+    "agieval_gaokao_chemistry": "298b30fddb559f13b752f13e9d5df9870ed193e55d393fa75daabc989f6d14a2",
+    "agieval_gaokao_chinese": "dbde0aa44b028bf2ae28c3e3bd3eb4b5c76a1c9e335b93377719aeae0f385089",
+    "agieval_gaokao_geography": "0f6315ed900034917ccc6a2a7e8af396ac5450984f5d2995966f4e6d944ddca7",
+    "agieval_gaokao_history": "477fc7b6346abd5e6d7899fbdf17f9b6480fcee718412afe23efcf7d2b467c99",
+    "agieval_gaokao_mathcloze": "e7d869494f25d82eb72aae9a978c044d2dd05456eb59288f5396caa2e976c37c",
+    "agieval_gaokao_mathqa": "a990d2387b02674e639121eeaf4bf747d0b7950638c0cf305818e1e7307271cd",
+    "agieval_gaokao_physics": "b35f0e58df73200a0b4bd485904fa2f31ddcbdb906d62166a21715a9fec13df6",
+    "agieval_jec_qa_ca": "8ece590313c402549921441fee0b161996f57a073d2562f41dcab194adf3d6e1",
+    "agieval_jec_qa_kd": "f968b31c5a4a5b2e2a309162cc1966ce2d859ae3db467b9bf77aec1dcf3da313",
+    "agieval_logiqa_zh": "e7dfec6cca6c9d836bcf0090fa307a59af484030c0395793b9ef4890dd73dae7",
+    "agieval_aqua_rat": "2186c15644e0585992df4e6090e4cbdc623f814a4725803c9fe053a3c6eee826",
+    "agieval_gaokao_english": "1997a0d2b769dd5690676a55acba44f9655257b3ec335745d4f8b70045941028",
+    "agieval_logiqa_en": "8cbc44ae4163ae2093f88be6eb95327bd0ac1c1aef48c40549bf0769b43aa0de",
+    "agieval_lsat_ar": "d09b7b14ebb5f21bbd602143c8fc62a4edef6a64ab0f6eb87b9aafa7a4426c43",
+    "agieval_lsat_lr": "a5cd32cd2a2759d428ef21fd2e8362276fe0b15dc1fff48fe30f6f39525d1336",
+    "agieval_lsat_rc": "ce4856d4b9eaa4beb1ab1cb0e139f73d4097298e16e06025258b05b3d422b0eb",
+    "agieval_math": "c4edf8986242f57ad6d5c1cb001b194b30d20a60bd6fb0909cb37b5e0d6d5c56",
+    "agieval_sat_en_without_passage": "11bfc5e60248d5acab69f12abac189f630e0b3ad7dc8cdb9db8ccdc040516bb0",
+    "agieval_sat_en": "3bb865c97a1fcec9154b1dbbae2bac428982fb809d8d42bb1ddb83199881c7ac",
+    "agieval_sat_math": "63798581920be3a992f61dab8df71eb75cb455163fca9ea156540d204951c2c2"
+  },
+  "model_source": "hf",
+  "model_name": "google/gemma-3-1b-it",
+  "model_name_sanitized": "google__gemma-3-1b-it",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 6800199.616343745,
+  "end_time": 6800421.398801498,
+  "total_evaluation_time_seconds": "221.7824577530846"
+}

@@ -1,0 +1,588 @@
+{
+  "results": {
+    "minerva_math": {
+      "exact_match,none": 0.0118,
+      "exact_match_stderr,none": 0.001525996382526197,
+      "math_verify,none": 0.1366,
+      "math_verify_stderr,none": 0.004763588911423507,
+      "alias": "minerva_math"
+    },
+    "minerva_math_algebra": {
+      "alias": " - minerva_math_algebra",
+      "exact_match,none": 0.014321819713563605,
+      "exact_match_stderr,none": 0.0034500415709370195,
+      "math_verify,none": 0.18365627632687448,
+      "math_verify_stderr,none": 0.01124338473266513
+    },
+    "minerva_math_counting_and_prob": {
+      "alias": " - minerva_math_counting_and_prob",
+      "exact_match,none": 0.004219409282700422,
+      "exact_match_stderr,none": 0.00298041736510205,
+      "math_verify,none": 0.0970464135021097,
+      "math_verify_stderr,none": 0.013611058115372833
+    },
+    "minerva_math_geometry": {
+      "alias": " - minerva_math_geometry",
+      "exact_match,none": 0.020876826722338204,
+      "exact_match_stderr,none": 0.006539385795813917,
+      "math_verify,none": 0.1127348643006263,
+      "math_verify_stderr,none": 0.014465780908921174
+    },
+    "minerva_math_intermediate_algebra": {
+      "alias": " - minerva_math_intermediate_algebra",
+      "exact_match,none": 0.005537098560354375,
+      "exact_match_stderr,none": 0.0024707690436948588,
+      "math_verify,none": 0.058693244739756366,
+      "math_verify_stderr,none": 0.00782629796703524
+    },
+    "minerva_math_num_theory": {
+      "alias": " - minerva_math_num_theory",
+      "exact_match,none": 0.005555555555555556,
+      "exact_match_stderr,none": 0.0032015451273208918,
+      "math_verify,none": 0.10740740740740741,
+      "math_verify_stderr,none": 0.013336730443649922
+    },
+    "minerva_math_prealgebra": {
+      "alias": " - minerva_math_prealgebra",
+      "exact_match,none": 0.018369690011481057,
+      "exact_match_stderr,none": 0.004552660520674617,
+      "math_verify,none": 0.24913892078071181,
+      "math_verify_stderr,none": 0.014663611970277471
+    },
+    "minerva_math_precalc": {
+      "alias": " - minerva_math_precalc",
+      "exact_match,none": 0.01098901098901099,
+      "exact_match_stderr,none": 0.004465618427331414,
+      "math_verify,none": 0.06776556776556776,
+      "math_verify_stderr,none": 0.010766359056008468
+    }
+  },
+  "groups": {
+    "minerva_math": {
+      "exact_match,none": 0.0118,
+      "exact_match_stderr,none": 0.001525996382526197,
+      "math_verify,none": 0.1366,
+      "math_verify_stderr,none": 0.004763588911423507,
+      "alias": "minerva_math"
+    }
+  },
+  "group_subtasks": {
+    "minerva_math": [
+      "minerva_math_algebra",
+      "minerva_math_counting_and_prob",
+      "minerva_math_geometry",
+      "minerva_math_intermediate_algebra",
+      "minerva_math_num_theory",
+      "minerva_math_prealgebra",
+      "minerva_math_precalc"
+    ]
+  },
+  "configs": {
+    "minerva_math_algebra": {
+      "task": "minerva_math_algebra",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "algebra",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": normalize_final_answer(\n                remove_boxed(last_boxed_only_string(doc[\"solution\"]))\n            ),\n        }\n        if getattr(doc, \"few_shot\", None) is not None:\n            out_doc[\"few_shot\"] = True\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "def doc_to_text(doc: dict) -> str:\n    return \"Problem:\" + \"\\n\" + doc[\"problem\"] + \"\\n\\n\" + \"Solution:\"\n",
+      "doc_to_target": "{{answer if few_shot is undefined else solution}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    candidates = results[0]\n\n    unnormalized_answer = get_unnormalized_answer(candidates)\n    answer = normalize_final_answer(unnormalized_answer)\n\n    if is_equiv(answer, doc[\"answer\"]):\n        retval = 1\n    else:\n        retval = 0\n\n    # math_verify\n    res = verify(parse(doc[\"answer\"]), parse(candidates))\n    mathval = 1 if res else 0\n\n    results = {\n        \"exact_match\": retval,\n        \"math_verify\": mathval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n",
+        "samples": "<function list_fewshot_samples at 0x7f440095aa70>"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "math_verify",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "minerva_math_counting_and_prob": {
+      "task": "minerva_math_counting_and_prob",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "counting_and_probability",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": normalize_final_answer(\n                remove_boxed(last_boxed_only_string(doc[\"solution\"]))\n            ),\n        }\n        if getattr(doc, \"few_shot\", None) is not None:\n            out_doc[\"few_shot\"] = True\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "def doc_to_text(doc: dict) -> str:\n    return \"Problem:\" + \"\\n\" + doc[\"problem\"] + \"\\n\\n\" + \"Solution:\"\n",
+      "doc_to_target": "{{answer if few_shot is undefined else solution}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    candidates = results[0]\n\n    unnormalized_answer = get_unnormalized_answer(candidates)\n    answer = normalize_final_answer(unnormalized_answer)\n\n    if is_equiv(answer, doc[\"answer\"]):\n        retval = 1\n    else:\n        retval = 0\n\n    # math_verify\n    res = verify(parse(doc[\"answer\"]), parse(candidates))\n    mathval = 1 if res else 0\n\n    results = {\n        \"exact_match\": retval,\n        \"math_verify\": mathval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n",
+        "samples": "<function list_fewshot_samples at 0x7f4400958700>"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "math_verify",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "minerva_math_geometry": {
+      "task": "minerva_math_geometry",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "geometry",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": normalize_final_answer(\n                remove_boxed(last_boxed_only_string(doc[\"solution\"]))\n            ),\n        }\n        if getattr(doc, \"few_shot\", None) is not None:\n            out_doc[\"few_shot\"] = True\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "def doc_to_text(doc: dict) -> str:\n    return \"Problem:\" + \"\\n\" + doc[\"problem\"] + \"\\n\\n\" + \"Solution:\"\n",
+      "doc_to_target": "{{answer if few_shot is undefined else solution}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    candidates = results[0]\n\n    unnormalized_answer = get_unnormalized_answer(candidates)\n    answer = normalize_final_answer(unnormalized_answer)\n\n    if is_equiv(answer, doc[\"answer\"]):\n        retval = 1\n    else:\n        retval = 0\n\n    # math_verify\n    res = verify(parse(doc[\"answer\"]), parse(candidates))\n    mathval = 1 if res else 0\n\n    results = {\n        \"exact_match\": retval,\n        \"math_verify\": mathval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n",
+        "samples": "<function list_fewshot_samples at 0x7f4400941d80>"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "math_verify",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "minerva_math_intermediate_algebra": {
+      "task": "minerva_math_intermediate_algebra",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "intermediate_algebra",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": normalize_final_answer(\n                remove_boxed(last_boxed_only_string(doc[\"solution\"]))\n            ),\n        }\n        if getattr(doc, \"few_shot\", None) is not None:\n            out_doc[\"few_shot\"] = True\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "def doc_to_text(doc: dict) -> str:\n    return \"Problem:\" + \"\\n\" + doc[\"problem\"] + \"\\n\\n\" + \"Solution:\"\n",
+      "doc_to_target": "{{answer if few_shot is undefined else solution}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    candidates = results[0]\n\n    unnormalized_answer = get_unnormalized_answer(candidates)\n    answer = normalize_final_answer(unnormalized_answer)\n\n    if is_equiv(answer, doc[\"answer\"]):\n        retval = 1\n    else:\n        retval = 0\n\n    # math_verify\n    res = verify(parse(doc[\"answer\"]), parse(candidates))\n    mathval = 1 if res else 0\n\n    results = {\n        \"exact_match\": retval,\n        \"math_verify\": mathval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n",
+        "samples": "<function list_fewshot_samples at 0x7f4401e90310>"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "math_verify",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "minerva_math_num_theory": {
+      "task": "minerva_math_num_theory",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "number_theory",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": normalize_final_answer(\n                remove_boxed(last_boxed_only_string(doc[\"solution\"]))\n            ),\n        }\n        if getattr(doc, \"few_shot\", None) is not None:\n            out_doc[\"few_shot\"] = True\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "def doc_to_text(doc: dict) -> str:\n    return \"Problem:\" + \"\\n\" + doc[\"problem\"] + \"\\n\\n\" + \"Solution:\"\n",
+      "doc_to_target": "{{answer if few_shot is undefined else solution}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    candidates = results[0]\n\n    unnormalized_answer = get_unnormalized_answer(candidates)\n    answer = normalize_final_answer(unnormalized_answer)\n\n    if is_equiv(answer, doc[\"answer\"]):\n        retval = 1\n    else:\n        retval = 0\n\n    # math_verify\n    res = verify(parse(doc[\"answer\"]), parse(candidates))\n    mathval = 1 if res else 0\n\n    results = {\n        \"exact_match\": retval,\n        \"math_verify\": mathval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n",
+        "samples": "<function list_fewshot_samples at 0x7f4401e939a0>"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "math_verify",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "minerva_math_prealgebra": {
+      "task": "minerva_math_prealgebra",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "prealgebra",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": normalize_final_answer(\n                remove_boxed(last_boxed_only_string(doc[\"solution\"]))\n            ),\n        }\n        if getattr(doc, \"few_shot\", None) is not None:\n            out_doc[\"few_shot\"] = True\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "def doc_to_text(doc: dict) -> str:\n    return \"Problem:\" + \"\\n\" + doc[\"problem\"] + \"\\n\\n\" + \"Solution:\"\n",
+      "doc_to_target": "{{answer if few_shot is undefined else solution}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    candidates = results[0]\n\n    unnormalized_answer = get_unnormalized_answer(candidates)\n    answer = normalize_final_answer(unnormalized_answer)\n\n    if is_equiv(answer, doc[\"answer\"]):\n        retval = 1\n    else:\n        retval = 0\n\n    # math_verify\n    res = verify(parse(doc[\"answer\"]), parse(candidates))\n    mathval = 1 if res else 0\n\n    results = {\n        \"exact_match\": retval,\n        \"math_verify\": mathval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n",
+        "samples": "<function list_fewshot_samples at 0x7f4401e91900>"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "math_verify",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "minerva_math_precalc": {
+      "task": "minerva_math_precalc",
+      "tag": [
+        "math_word_problems"
+      ],
+      "dataset_path": "EleutherAI/hendrycks_math",
+      "dataset_name": "precalculus",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "test_split": "test",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc: dict) -> dict:\n        out_doc = {\n            \"problem\": doc[\"problem\"],\n            \"solution\": doc[\"solution\"],\n            \"answer\": normalize_final_answer(\n                remove_boxed(last_boxed_only_string(doc[\"solution\"]))\n            ),\n        }\n        if getattr(doc, \"few_shot\", None) is not None:\n            out_doc[\"few_shot\"] = True\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "def doc_to_text(doc: dict) -> str:\n    return \"Problem:\" + \"\\n\" + doc[\"problem\"] + \"\\n\\n\" + \"Solution:\"\n",
+      "doc_to_target": "{{answer if few_shot is undefined else solution}}",
+      "unsafe_code": false,
+      "process_results": "def process_results(doc: dict, results: List[str]) -> Dict[str, int]:\n    candidates = results[0]\n\n    unnormalized_answer = get_unnormalized_answer(candidates)\n    answer = normalize_final_answer(unnormalized_answer)\n\n    if is_equiv(answer, doc[\"answer\"]):\n        retval = 1\n    else:\n        retval = 0\n\n    # math_verify\n    res = verify(parse(doc[\"answer\"]), parse(candidates))\n    mathval = 1 if res else 0\n\n    results = {\n        \"exact_match\": retval,\n        \"math_verify\": mathval,\n    }\n    return results\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n",
+        "samples": "<function list_fewshot_samples at 0x7f4401fe4040>"
+      },
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "math_verify",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "Problem:"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    }
+  },
+  "versions": {
+    "minerva_math": 1.0,
+    "minerva_math_algebra": 2.0,
+    "minerva_math_counting_and_prob": 2.0,
+    "minerva_math_geometry": 2.0,
+    "minerva_math_intermediate_algebra": 2.0,
+    "minerva_math_num_theory": 2.0,
+    "minerva_math_prealgebra": 2.0,
+    "minerva_math_precalc": 2.0
+  },
+  "n-shot": {
+    "minerva_math_algebra": 0,
+    "minerva_math_counting_and_prob": 0,
+    "minerva_math_geometry": 0,
+    "minerva_math_intermediate_algebra": 0,
+    "minerva_math_num_theory": 0,
+    "minerva_math_prealgebra": 0,
+    "minerva_math_precalc": 0
+  },
+  "higher_is_better": {
+    "minerva_math": {
+      "exact_match": true,
+      "math_verify": true
+    },
+    "minerva_math_algebra": {
+      "exact_match": true,
+      "math_verify": true
+    },
+    "minerva_math_counting_and_prob": {
+      "exact_match": true,
+      "math_verify": true
+    },
+    "minerva_math_geometry": {
+      "exact_match": true,
+      "math_verify": true
+    },
+    "minerva_math_intermediate_algebra": {
+      "exact_match": true,
+      "math_verify": true
+    },
+    "minerva_math_num_theory": {
+      "exact_match": true,
+      "math_verify": true
+    },
+    "minerva_math_prealgebra": {
+      "exact_match": true,
+      "math_verify": true
+    },
+    "minerva_math_precalc": {
+      "exact_match": true,
+      "math_verify": true
+    }
+  },
+  "n-samples": {
+    "minerva_math_algebra": {
+      "original": 1187,
+      "effective": 1187
+    },
+    "minerva_math_counting_and_prob": {
+      "original": 474,
+      "effective": 474
+    },
+    "minerva_math_geometry": {
+      "original": 479,
+      "effective": 479
+    },
+    "minerva_math_intermediate_algebra": {
+      "original": 903,
+      "effective": 903
+    },
+    "minerva_math_num_theory": {
+      "original": 540,
+      "effective": 540
+    },
+    "minerva_math_prealgebra": {
+      "original": 871,
+      "effective": 871
+    },
+    "minerva_math_precalc": {
+      "original": 546,
+      "effective": 546
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=meta-llama/Llama-3.2-1B-Instruct",
+    "model_num_parameters": 1235814400,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "9213176726f574b556790deb65791e0c5aa438b6",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "a9691f4a",
+  "date": 1744297480.0205855,
+  "pretty_env_info": "PyTorch version: 2.6.0+cu124\nIs debug build: False\nCUDA used to build PyTorch: 12.4\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.4 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0\nClang version: Could not collect\nCMake version: version 3.22.1\nLibc version: glibc-2.35\n\nPython version: 3.10.16 (main, Dec 11 2024, 16:24:50) [GCC 11.2.0] (64-bit runtime)\nPython platform: Linux-5.15.0-1053-nvidia-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: 12.4.131\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: \nGPU 0: NVIDIA H100 80GB HBM3\nGPU 1: NVIDIA H100 80GB HBM3\nGPU 2: NVIDIA H100 80GB HBM3\nGPU 3: NVIDIA H100 80GB HBM3\nGPU 4: NVIDIA H100 80GB HBM3\nGPU 5: NVIDIA H100 80GB HBM3\nGPU 6: NVIDIA H100 80GB HBM3\nGPU 7: NVIDIA H100 80GB HBM3\n\nNvidia driver version: 535.161.08\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:                       x86_64\nCPU op-mode(s):                     32-bit, 64-bit\nAddress sizes:                      52 bits physical, 57 bits virtual\nByte Order:                         Little Endian\nCPU(s):                             224\nOn-line CPU(s) list:                0-223\nVendor ID:                          GenuineIntel\nModel name:                         Intel(R) Xeon(R) Platinum 8480CL\nCPU family:                         6\nModel:                              143\nThread(s) per core:                 2\nCore(s) per socket:                 56\nSocket(s):                          2\nStepping:                           7\nCPU max MHz:                        3800.0000\nCPU min MHz:                        800.0000\nBogoMIPS:                           4000.00\nFlags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nL1d cache:                          5.3 MiB (112 instances)\nL1i cache:                          3.5 MiB (112 instances)\nL2 cache:                           224 MiB (112 instances)\nL3 cache:                           210 MiB (2 instances)\nNUMA node(s):                       2\nNUMA node0 CPU(s):                  0-55,112-167\nNUMA node1 CPU(s):                  56-111,168-223\nVulnerability Gather data sampling: Not affected\nVulnerability Itlb multihit:        Not affected\nVulnerability L1tf:                 Not affected\nVulnerability Mds:                  Not affected\nVulnerability Meltdown:             Not affected\nVulnerability Mmio stale data:      Not affected\nVulnerability Retbleed:             Not affected\nVulnerability Spec rstack overflow: Not affected\nVulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:           Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence\nVulnerability Srbds:                Not affected\nVulnerability Tsx async abort:      Not affected\n\nVersions of relevant libraries:\n[pip3] flashinfer-python==0.2.3+cu124torch2.5\n[pip3] numpy==2.1.3\n[pip3] nvidia-cublas-cu12==12.4.5.8\n[pip3] nvidia-cuda-cupti-cu12==12.4.127\n[pip3] nvidia-cuda-nvrtc-cu12==12.4.127\n[pip3] nvidia-cuda-runtime-cu12==12.4.127\n[pip3] nvidia-cudnn-cu12==9.1.0.70\n[pip3] nvidia-cufft-cu12==11.2.1.3\n[pip3] nvidia-curand-cu12==10.3.5.147\n[pip3] nvidia-cusolver-cu12==11.6.1.9\n[pip3] nvidia-cusparse-cu12==12.3.1.170\n[pip3] nvidia-cusparselt-cu12==0.6.2\n[pip3] nvidia-nccl-cu12==2.21.5\n[pip3] nvidia-nvjitlink-cu12==12.4.127\n[pip3] nvidia-nvtx-cu12==12.4.127\n[pip3] torch==2.6.0\n[pip3] torchao==0.10.0\n[pip3] torchaudio==2.6.0\n[pip3] torchvision==0.21.0\n[pip3] triton==3.2.0\n[conda] cuda-cudart               12.4.127             h99ab3db_0  \n[conda] cuda-cudart-dev           12.4.127             h99ab3db_0  \n[conda] cuda-cudart-dev_linux-64  12.4.127             hd681fbe_0  \n[conda] cuda-cudart-static        12.4.127             h99ab3db_0  \n[conda] cuda-cudart-static_linux-64 12.4.127             hd681fbe_0  \n[conda] cuda-cudart_linux-64      12.4.127             hd681fbe_0  \n[conda] cuda-cupti                12.4.127             h6a678d5_1  \n[conda] cuda-cupti-dev            12.4.127             h6a678d5_1  \n[conda] cuda-libraries            12.4.1               h06a4308_1  \n[conda] cuda-libraries-dev        12.4.1               h06a4308_1  \n[conda] cuda-nvrtc                12.4.127             h99ab3db_1  \n[conda] cuda-nvrtc-dev            12.4.127             h99ab3db_1  \n[conda] cuda-nvtx                 12.4.127             h6a678d5_1  \n[conda] cuda-opencl               12.4.127             h6a678d5_0  \n[conda] cuda-opencl-dev           12.4.127             h6a678d5_0  \n[conda] flashinfer-python         0.2.3+cu124torch2.5          pypi_0    pypi\n[conda] libcublas                 12.4.5.8             h99ab3db_1  \n[conda] libcublas-dev             12.4.5.8             h99ab3db_1  \n[conda] libcufft                  11.2.1.3             h99ab3db_1  \n[conda] libcufft-dev              11.2.1.3             h99ab3db_1  \n[conda] libcurand                 10.3.5.147           h99ab3db_1  \n[conda] libcurand-dev             10.3.5.147           h99ab3db_1  \n[conda] libcusolver               11.6.1.9             h99ab3db_1  \n[conda] libcusolver-dev           11.6.1.9             h99ab3db_1  \n[conda] libcusparse               12.3.1.170           h99ab3db_1  \n[conda] libcusparse-dev           12.3.1.170           h99ab3db_1  \n[conda] libnvjitlink              12.4.127             h99ab3db_1  \n[conda] libnvjitlink-dev          12.4.127             h99ab3db_1  \n[conda] numpy                     2.1.3                    pypi_0    pypi\n[conda] nvidia-cublas-cu12        12.4.5.8                 pypi_0    pypi\n[conda] nvidia-cuda-cupti-cu12    12.4.127                 pypi_0    pypi\n[conda] nvidia-cuda-nvrtc-cu12    12.4.127                 pypi_0    pypi\n[conda] nvidia-cuda-runtime-cu12  12.4.127                 pypi_0    pypi\n[conda] nvidia-cudnn-cu12         9.1.0.70                 pypi_0    pypi\n[conda] nvidia-cufft-cu12         11.2.1.3                 pypi_0    pypi\n[conda] nvidia-curand-cu12        10.3.5.147               pypi_0    pypi\n[conda] nvidia-cusolver-cu12      11.6.1.9                 pypi_0    pypi\n[conda] nvidia-cusparse-cu12      12.3.1.170               pypi_0    pypi\n[conda] nvidia-cusparselt-cu12    0.6.2                    pypi_0    pypi\n[conda] nvidia-nccl-cu12          2.21.5                   pypi_0    pypi\n[conda] nvidia-nvjitlink-cu12     12.4.127                 pypi_0    pypi\n[conda] nvidia-nvtx-cu12          12.4.127                 pypi_0    pypi\n[conda] torch                     2.6.0                    pypi_0    pypi\n[conda] torchao                   0.10.0                   pypi_0    pypi\n[conda] torchaudio                2.6.0                    pypi_0    pypi\n[conda] torchvision               0.21.0                   pypi_0    pypi\n[conda] triton                    3.2.0                    pypi_0    pypi",
+  "transformers_version": "4.51.1",
+  "lm_eval_version": "0.4.8",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|eot_id|>",
+    "128009"
+  ],
+  "tokenizer_eos_token": [
+    "<|eot_id|>",
+    "128009"
+  ],
+  "tokenizer_bos_token": [
+    "<|begin_of_text|>",
+    "128000"
+  ],
+  "eot_token_id": 128009,
+  "max_length": 131072,
+  "task_hashes": {
+    "minerva_math_algebra": "da6f246041970ea6b5baea4bc60407fcd493844c7f912d8018417390c30ba424",
+    "minerva_math_counting_and_prob": "886983aacd51f9b5f39b7507d999a73244a4b70db6f19235d2a7d858598bdf15",
+    "minerva_math_geometry": "2fb5248eccdd55425155e159043ccc37644f88a03d753fd6f968a077919112ce",
+    "minerva_math_intermediate_algebra": "6e1a841c5a05308b5ea7c64c16eada76189babfa052fc7be2a6543f74cfa48f7",
+    "minerva_math_num_theory": "86205032670d0647d597a4442962f1a035074b6e67d77c25ac31c84465639c46",
+    "minerva_math_prealgebra": "5612c5af17d13f4b92dc8dc80d2e6fd7e73195743893833462f38fc94a1e0bc4",
+    "minerva_math_precalc": "14def5e3ee8755517ced67ba3e3946c1232f9c97289fe1078414cfb9ab43f6f6"
+  },
+  "model_source": "hf",
+  "model_name": "meta-llama/Llama-3.2-1B-Instruct",
+  "model_name_sanitized": "meta-llama__Llama-3.2-1B-Instruct",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 6803186.767991905,
+  "end_time": 6811073.571254519,
+  "total_evaluation_time_seconds": "7886.803262613714"
+}

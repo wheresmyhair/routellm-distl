@@ -1,0 +1,69 @@
+INFO 04-10 07:20:05 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['wikitext']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'meta-llama/Llama-3.2-3B-Instruct'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.71s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.01s/it]
+WARNING:lm_eval.api.task:[Task: wikitext] metric word_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+WARNING:lm_eval.api.task:[Task: wikitext] metric word_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+WARNING:lm_eval.api.task:[Task: wikitext] metric byte_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+WARNING:lm_eval.api.task:[Task: wikitext] metric byte_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+WARNING:lm_eval.api.task:[Task: wikitext] metric bits_per_byte is defined, but aggregation is not. using default aggregation=bits_per_byte
+WARNING:lm_eval.api.task:[Task: wikitext] metric bits_per_byte is defined, but higher_is_better is not. using default higher_is_better=False
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of wikitext from None to 0
+INFO:lm_eval.api.task:Building contexts for wikitext on rank 0...
+  0%|          | 0/62 [00:00<?, ?it/s]100%|██████████| 62/62 [00:00<00:00, 967.04it/s]
+INFO:lm_eval.evaluator:Running loglikelihood_rolling requests
+  0%|          | 0/62 [00:00<?, ?it/s] 19%|█▉        | 12/62 [00:00<00:00, 119.47it/s] 45%|████▌     | 28/62 [00:00<00:00, 143.09it/s] 69%|██████▉   | 43/62 [00:00<00:00, 127.95it/s]100%|██████████| 62/62 [00:00<00:00, 148.20it/s]
+Running loglikelihood requests:   0%|          | 0/62 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/yizhenjia/anaconda3/envs/lmeval/bin/lm_eval", line 10, in <module>
+    sys.exit(cli_evaluate())
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/__main__.py", line 449, in cli_evaluate
+    results = evaluator.simple_evaluate(
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/evaluator.py", line 338, in simple_evaluate
+    results = evaluate(
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/evaluator.py", line 570, in evaluate
+    resps = getattr(lm, reqtype)(cloned_reqs)
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/models/huggingface.py", line 988, in loglikelihood_rolling
+    batch_nlls = self._loglikelihood_tokens(
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/models/huggingface.py", line 1200, in _loglikelihood_tokens
+    self._model_call(batched_inps, **call_kwargs), dim=-1
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/models/huggingface.py", line 883, in _model_call
+    return self.model(inps).logits
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 821, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 571, in forward
+    layer_outputs = decoder_layer(
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 334, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 172, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.52 GiB. GPU 0 has a total capacity of 79.11 GiB of which 10.01 GiB is free. Including non-PyTorch memory, this process has 69.09 GiB memory in use. Of the allocated memory 55.04 GiB is allocated by PyTorch, and 13.40 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Running loglikelihood requests:   0%|          | 0/62 [00:01<?, ?it/s]

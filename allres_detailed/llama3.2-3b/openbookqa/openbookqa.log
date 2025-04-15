@@ -1,0 +1,20 @@
+INFO 04-10 07:17:48 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['openbookqa']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'meta-llama/Llama-3.2-3B-Instruct'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.44s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.29it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.14it/s]
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of openbookqa from None to 0
+INFO:lm_eval.api.task:Building contexts for openbookqa on rank 0...
+  0%|          | 0/500 [00:00<?, ?it/s] 82%|████████▏ | 411/500 [00:00<00:00, 4100.99it/s]100%|██████████| 500/500 [00:00<00:00, 4101.75it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/2000 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/2000 [00:00<20:23,  1.63it/s]Running loglikelihood requests:  15%|█▌        | 309/2000 [00:00<00:03, 541.42it/s]Running loglikelihood requests:  32%|███▏      | 632/2000 [00:00<00:01, 1052.26it/s]Running loglikelihood requests:  47%|████▋     | 944/2000 [00:00<00:00, 1502.88it/s]Running loglikelihood requests:  69%|██████▉   | 1383/2000 [00:01<00:00, 2188.04it/s]Running loglikelihood requests:  88%|████████▊ | 1770/2000 [00:01<00:00, 2523.02it/s]Running loglikelihood requests: 100%|██████████| 2000/2000 [00:01<00:00, 1512.59it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: openbookqa
+hf (pretrained=meta-llama/Llama-3.2-3B-Instruct), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|  Tasks   |Version|Filter|n-shot| Metric |   |Value|   |Stderr|
+|----------|------:|------|-----:|--------|---|----:|---|-----:|
+|openbookqa|      1|none  |     0|acc     |↑  |0.274|±  |0.0200|
+|          |       |none  |     0|acc_norm|↑  |0.360|±  |0.0215|
+

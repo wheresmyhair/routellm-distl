@@ -1,0 +1,20 @@
+INFO 04-10 07:30:51 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['openbookqa']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'google/gemma-3-1b-it'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+INFO:lm_eval.models.huggingface:Model type is 'gemma3_text', part of the Gemma family--a BOS token will be used as Gemma underperforms without it.
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of openbookqa from None to 0
+INFO:lm_eval.api.task:Building contexts for openbookqa on rank 0...
+  0%|          | 0/500 [00:00<?, ?it/s] 80%|███████▉  | 399/500 [00:00<00:00, 3988.83it/s]100%|██████████| 500/500 [00:00<00:00, 3980.45it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/2000 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/2000 [00:00<21:16,  1.57it/s]Running loglikelihood requests:  17%|█▋        | 333/2000 [00:00<00:02, 580.72it/s]Running loglikelihood requests:  34%|███▎      | 672/2000 [00:00<00:01, 944.33it/s]Running loglikelihood requests:  50%|████▉     | 995/2000 [00:01<00:00, 1352.88it/s]Running loglikelihood requests:  65%|██████▌   | 1307/2000 [00:01<00:00, 1695.81it/s]Running loglikelihood requests:  84%|████████▎ | 1673/2000 [00:01<00:00, 2113.54it/s]Running loglikelihood requests: 100%|██████████| 2000/2000 [00:01<00:00, 1473.15it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: openbookqa
+hf (pretrained=google/gemma-3-1b-it), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|  Tasks   |Version|Filter|n-shot| Metric |   |Value|   |Stderr|
+|----------|------:|------|-----:|--------|---|----:|---|-----:|
+|openbookqa|      1|none  |     0|acc     |↑  |0.300|±  |0.0205|
+|          |       |none  |     0|acc_norm|↑  |0.384|±  |0.0218|
+

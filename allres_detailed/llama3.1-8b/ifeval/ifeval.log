@@ -1,0 +1,27 @@
+INFO 04-10 07:43:41 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['ifeval']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'meta-llama/Llama-3.1-8B-Instruct'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.42s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.16s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.09s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.10it/s]
+INFO:lm_eval.evaluator:ifeval: Using gen_kwargs: {'until': [], 'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 1280}
+INFO:lm_eval.evaluator:num_fewshot has been set to 0 for ifeval in its config. Manual configuration will be ignored.
+INFO:lm_eval.api.task:Building contexts for ifeval on rank 0...
+  0%|          | 0/541 [00:00<?, ?it/s]100%|██████████| 541/541 [00:00<00:00, 131764.62it/s]
+INFO:lm_eval.evaluator:Running generate_until requests
+Running generate_until requests:   0%|          | 0/541 [00:00<?, ?it/s]/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Running generate_until requests:   0%|          | 1/541 [03:12<28:49:59, 192.22s/it]Running generate_until requests:  24%|██▍       | 129/541 [05:29<14:30,  2.11s/it]  Running generate_until requests:  48%|████▊     | 257/541 [07:45<07:04,  1.50s/it]Running generate_until requests:  71%|███████   | 385/541 [09:59<03:21,  1.29s/it]Running generate_until requests:  95%|█████████▍| 513/541 [10:43<00:25,  1.09it/s]Running generate_until requests: 100%|██████████| 541/541 [10:43<00:00,  1.19s/it]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: ifeval
+hf (pretrained=meta-llama/Llama-3.1-8B-Instruct), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|Tasks |Version|Filter|n-shot|        Metric         |   |Value |   |Stderr|
+|------|------:|------|-----:|-----------------------|---|-----:|---|------|
+|ifeval|      4|none  |     0|inst_level_loose_acc   |↑  |0.6079|±  |   N/A|
+|      |       |none  |     0|inst_level_strict_acc  |↑  |0.5791|±  |   N/A|
+|      |       |none  |     0|prompt_level_loose_acc |↑  |0.4640|±  |0.0215|
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.4270|±  |0.0213|
+

@@ -1,0 +1,314 @@
+INFO 04-10 07:19:42 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['mmlu']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'google/gemma-3-1b-it'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+INFO:lm_eval.models.huggingface:Model type is 'gemma3_text', part of the Gemma family--a BOS token will be used as Gemma underperforms without it.
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_abstract_algebra from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_anatomy from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_astronomy from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_college_biology from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_college_chemistry from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_college_computer_science from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_college_mathematics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_college_physics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_computer_security from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_conceptual_physics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_electrical_engineering from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_elementary_mathematics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_biology from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_chemistry from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_computer_science from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_mathematics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_physics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_statistics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_machine_learning from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_business_ethics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_clinical_knowledge from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_college_medicine from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_global_facts from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_human_aging from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_management from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_marketing from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_medical_genetics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_miscellaneous from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_nutrition from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_professional_accounting from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_professional_medicine from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_virology from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_econometrics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_geography from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_government_and_politics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_macroeconomics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_microeconomics from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_psychology from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_human_sexuality from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_professional_psychology from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_public_relations from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_security_studies from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_sociology from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_us_foreign_policy from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_formal_logic from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_european_history from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_us_history from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_high_school_world_history from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_international_law from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_jurisprudence from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_logical_fallacies from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_moral_disputes from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_moral_scenarios from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_philosophy from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_prehistory from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_professional_law from None to 0
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of mmlu_world_religions from None to 0
+INFO:lm_eval.api.task:Building contexts for mmlu_abstract_algebra on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1119.25it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_anatomy on rank 0...
+  0%|          | 0/135 [00:00<?, ?it/s] 84%|████████▎ | 113/135 [00:00<00:00, 1124.79it/s]100%|██████████| 135/135 [00:00<00:00, 1124.68it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_astronomy on rank 0...
+  0%|          | 0/152 [00:00<?, ?it/s] 74%|███████▎  | 112/152 [00:00<00:00, 1119.65it/s]100%|██████████| 152/152 [00:00<00:00, 1114.15it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_college_biology on rank 0...
+  0%|          | 0/144 [00:00<?, ?it/s] 78%|███████▊  | 113/144 [00:00<00:00, 1127.06it/s]100%|██████████| 144/144 [00:00<00:00, 1131.95it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_college_chemistry on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1137.39it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_college_computer_science on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1149.00it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_college_mathematics on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1139.58it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_college_physics on rank 0...
+  0%|          | 0/102 [00:00<?, ?it/s]100%|██████████| 102/102 [00:00<00:00, 1142.36it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_computer_security on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1157.39it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_conceptual_physics on rank 0...
+  0%|          | 0/235 [00:00<?, ?it/s] 49%|████▊     | 114/235 [00:00<00:00, 1128.81it/s] 97%|█████████▋| 227/235 [00:00<00:00, 1120.46it/s]100%|██████████| 235/235 [00:00<00:00, 1121.11it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_electrical_engineering on rank 0...
+  0%|          | 0/145 [00:00<?, ?it/s] 79%|███████▉  | 115/145 [00:00<00:00, 1148.30it/s]100%|██████████| 145/145 [00:00<00:00, 1142.46it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_elementary_mathematics on rank 0...
+  0%|          | 0/378 [00:00<?, ?it/s] 30%|██▉       | 113/378 [00:00<00:00, 1124.82it/s] 60%|██████    | 227/378 [00:00<00:00, 1130.07it/s] 90%|█████████ | 341/378 [00:00<00:00, 1107.03it/s]100%|██████████| 378/378 [00:00<00:00, 1114.77it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_biology on rank 0...
+  0%|          | 0/310 [00:00<?, ?it/s] 37%|███▋      | 116/310 [00:00<00:00, 1153.40it/s] 75%|███████▍  | 232/310 [00:00<00:00, 1136.24it/s]100%|██████████| 310/310 [00:00<00:00, 1139.43it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_chemistry on rank 0...
+  0%|          | 0/203 [00:00<?, ?it/s] 57%|█████▋    | 115/203 [00:00<00:00, 1143.69it/s]100%|██████████| 203/203 [00:00<00:00, 1146.05it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_computer_science on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1111.95it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_mathematics on rank 0...
+  0%|          | 0/270 [00:00<?, ?it/s] 43%|████▎     | 117/270 [00:00<00:00, 1160.87it/s] 87%|████████▋ | 234/270 [00:00<00:00, 1157.28it/s]100%|██████████| 270/270 [00:00<00:00, 1156.80it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_physics on rank 0...
+  0%|          | 0/151 [00:00<?, ?it/s] 77%|███████▋  | 116/151 [00:00<00:00, 1150.43it/s]100%|██████████| 151/151 [00:00<00:00, 1148.96it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_statistics on rank 0...
+  0%|          | 0/216 [00:00<?, ?it/s] 53%|█████▎    | 114/216 [00:00<00:00, 1138.33it/s]100%|██████████| 216/216 [00:00<00:00, 1142.05it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_machine_learning on rank 0...
+  0%|          | 0/112 [00:00<?, ?it/s]100%|██████████| 112/112 [00:00<00:00, 1135.21it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_business_ethics on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1149.70it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_clinical_knowledge on rank 0...
+  0%|          | 0/265 [00:00<?, ?it/s] 44%|████▍     | 116/265 [00:00<00:00, 1153.52it/s] 88%|████████▊ | 232/265 [00:00<00:00, 1153.55it/s]100%|██████████| 265/265 [00:00<00:00, 1153.33it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_college_medicine on rank 0...
+  0%|          | 0/173 [00:00<?, ?it/s] 66%|██████▌   | 114/173 [00:00<00:00, 1130.41it/s]100%|██████████| 173/173 [00:00<00:00, 1134.01it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_global_facts on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1139.57it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_human_aging on rank 0...
+  0%|          | 0/223 [00:00<?, ?it/s] 52%|█████▏    | 116/223 [00:00<00:00, 1151.28it/s]100%|██████████| 223/223 [00:00<00:00, 1140.54it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_management on rank 0...
+  0%|          | 0/103 [00:00<?, ?it/s]100%|██████████| 103/103 [00:00<00:00, 1145.61it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_marketing on rank 0...
+  0%|          | 0/234 [00:00<?, ?it/s] 50%|█████     | 117/234 [00:00<00:00, 1167.70it/s]100%|██████████| 234/234 [00:00<00:00, 1163.95it/s]100%|██████████| 234/234 [00:00<00:00, 1163.92it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_medical_genetics on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1153.10it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_miscellaneous on rank 0...
+  0%|          | 0/783 [00:00<?, ?it/s] 15%|█▍        | 116/783 [00:00<00:00, 1153.95it/s] 30%|██▉       | 232/783 [00:00<00:00, 1152.53it/s] 44%|████▍     | 348/783 [00:00<00:00, 1144.53it/s] 59%|█████▉    | 463/783 [00:00<00:00, 1146.25it/s] 74%|███████▍  | 578/783 [00:00<00:00, 1146.66it/s] 89%|████████▊ | 693/783 [00:00<00:00, 1142.40it/s]100%|██████████| 783/783 [00:00<00:00, 1131.77it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_nutrition on rank 0...
+  0%|          | 0/306 [00:00<?, ?it/s] 35%|███▍      | 106/306 [00:00<00:00, 1054.75it/s] 72%|███████▏  | 219/306 [00:00<00:00, 1095.66it/s]100%|██████████| 306/306 [00:00<00:00, 1104.34it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_professional_accounting on rank 0...
+  0%|          | 0/282 [00:00<?, ?it/s] 40%|███▉      | 112/282 [00:00<00:00, 1117.94it/s] 79%|███████▉  | 224/282 [00:00<00:00, 1064.87it/s]100%|██████████| 282/282 [00:00<00:00, 1048.80it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_professional_medicine on rank 0...
+  0%|          | 0/272 [00:00<?, ?it/s] 39%|███▊      | 105/272 [00:00<00:00, 1044.67it/s] 77%|███████▋  | 210/272 [00:00<00:00, 1038.39it/s]100%|██████████| 272/272 [00:00<00:00, 1027.98it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_virology on rank 0...
+  0%|          | 0/166 [00:00<?, ?it/s] 69%|██████▊   | 114/166 [00:00<00:00, 1138.60it/s]100%|██████████| 166/166 [00:00<00:00, 1138.21it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_econometrics on rank 0...
+  0%|          | 0/114 [00:00<?, ?it/s]100%|██████████| 114/114 [00:00<00:00, 1139.71it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_geography on rank 0...
+  0%|          | 0/198 [00:00<?, ?it/s] 59%|█████▊    | 116/198 [00:00<00:00, 1153.99it/s]100%|██████████| 198/198 [00:00<00:00, 1120.14it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_government_and_politics on rank 0...
+  0%|          | 0/193 [00:00<?, ?it/s] 60%|█████▉    | 115/193 [00:00<00:00, 1140.67it/s]100%|██████████| 193/193 [00:00<00:00, 1147.20it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_macroeconomics on rank 0...
+  0%|          | 0/390 [00:00<?, ?it/s] 29%|██▉       | 114/390 [00:00<00:00, 1139.44it/s] 58%|█████▊    | 228/390 [00:00<00:00, 1137.20it/s] 88%|████████▊ | 342/390 [00:00<00:00, 1131.13it/s]100%|██████████| 390/390 [00:00<00:00, 1135.46it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_microeconomics on rank 0...
+  0%|          | 0/238 [00:00<?, ?it/s] 48%|████▊     | 115/238 [00:00<00:00, 1140.64it/s] 97%|█████████▋| 230/238 [00:00<00:00, 1145.53it/s]100%|██████████| 238/238 [00:00<00:00, 1144.44it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_psychology on rank 0...
+  0%|          | 0/545 [00:00<?, ?it/s] 21%|██▏       | 117/545 [00:00<00:00, 1164.50it/s] 43%|████▎     | 234/545 [00:00<00:00, 1144.88it/s] 64%|██████▍   | 349/545 [00:00<00:00, 1135.52it/s] 85%|████████▌ | 465/545 [00:00<00:00, 1142.82it/s]100%|██████████| 545/545 [00:00<00:00, 1144.60it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_human_sexuality on rank 0...
+  0%|          | 0/131 [00:00<?, ?it/s] 87%|████████▋ | 114/131 [00:00<00:00, 1131.56it/s]100%|██████████| 131/131 [00:00<00:00, 1131.64it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_professional_psychology on rank 0...
+  0%|          | 0/612 [00:00<?, ?it/s] 19%|█▉        | 115/612 [00:00<00:00, 1146.10it/s] 38%|███▊      | 230/612 [00:00<00:00, 1146.86it/s] 57%|█████▋    | 346/612 [00:00<00:00, 1149.24it/s] 75%|███████▌  | 462/612 [00:00<00:00, 1151.00it/s] 94%|█████████▍| 578/612 [00:00<00:00, 1147.80it/s]100%|██████████| 612/612 [00:00<00:00, 1148.83it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_public_relations on rank 0...
+  0%|          | 0/110 [00:00<?, ?it/s]100%|██████████| 110/110 [00:00<00:00, 1158.23it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_security_studies on rank 0...
+  0%|          | 0/245 [00:00<?, ?it/s] 48%|████▊     | 117/245 [00:00<00:00, 1163.72it/s] 96%|█████████▌| 234/245 [00:00<00:00, 1151.26it/s]100%|██████████| 245/245 [00:00<00:00, 1151.56it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_sociology on rank 0...
+  0%|          | 0/201 [00:00<?, ?it/s] 57%|█████▋    | 114/201 [00:00<00:00, 1139.26it/s]100%|██████████| 201/201 [00:00<00:00, 1148.22it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_us_foreign_policy on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1132.83it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_formal_logic on rank 0...
+  0%|          | 0/126 [00:00<?, ?it/s] 91%|█████████▏| 115/126 [00:00<00:00, 1146.00it/s]100%|██████████| 126/126 [00:00<00:00, 1145.51it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_european_history on rank 0...
+  0%|          | 0/165 [00:00<?, ?it/s] 70%|███████   | 116/165 [00:00<00:00, 1154.67it/s]100%|██████████| 165/165 [00:00<00:00, 1150.83it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_us_history on rank 0...
+  0%|          | 0/204 [00:00<?, ?it/s] 57%|█████▋    | 116/204 [00:00<00:00, 1158.58it/s]100%|██████████| 204/204 [00:00<00:00, 1157.76it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_high_school_world_history on rank 0...
+  0%|          | 0/237 [00:00<?, ?it/s] 49%|████▉     | 116/237 [00:00<00:00, 1153.75it/s] 98%|█████████▊| 232/237 [00:00<00:00, 1149.99it/s]100%|██████████| 237/237 [00:00<00:00, 1149.42it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_international_law on rank 0...
+  0%|          | 0/121 [00:00<?, ?it/s] 95%|█████████▌| 115/121 [00:00<00:00, 1140.66it/s]100%|██████████| 121/121 [00:00<00:00, 1133.71it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_jurisprudence on rank 0...
+  0%|          | 0/108 [00:00<?, ?it/s]100%|██████████| 108/108 [00:00<00:00, 1139.11it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_logical_fallacies on rank 0...
+  0%|          | 0/163 [00:00<?, ?it/s] 71%|███████   | 116/163 [00:00<00:00, 1152.23it/s]100%|██████████| 163/163 [00:00<00:00, 1154.95it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_moral_disputes on rank 0...
+  0%|          | 0/346 [00:00<?, ?it/s] 34%|███▎      | 116/346 [00:00<00:00, 1154.50it/s] 67%|██████▋   | 232/346 [00:00<00:00, 1149.15it/s]100%|██████████| 346/346 [00:00<00:00, 1148.88it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_moral_scenarios on rank 0...
+  0%|          | 0/895 [00:00<?, ?it/s] 13%|█▎        | 116/895 [00:00<00:00, 1155.75it/s] 26%|██▌       | 232/895 [00:00<00:00, 1157.49it/s] 39%|███▉      | 348/895 [00:00<00:00, 1153.99it/s] 52%|█████▏    | 464/895 [00:00<00:00, 1152.29it/s] 65%|██████▍   | 580/895 [00:00<00:00, 1147.10it/s] 78%|███████▊  | 695/895 [00:00<00:00, 1144.71it/s] 91%|█████████ | 811/895 [00:00<00:00, 1146.68it/s]100%|██████████| 895/895 [00:00<00:00, 1148.91it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_philosophy on rank 0...
+  0%|          | 0/311 [00:00<?, ?it/s] 37%|███▋      | 114/311 [00:00<00:00, 1139.48it/s] 74%|███████▍  | 230/311 [00:00<00:00, 1148.08it/s]100%|██████████| 311/311 [00:00<00:00, 1148.37it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_prehistory on rank 0...
+  0%|          | 0/324 [00:00<?, ?it/s] 35%|███▌      | 115/324 [00:00<00:00, 1147.40it/s] 71%|███████   | 230/324 [00:00<00:00, 1108.45it/s]100%|██████████| 324/324 [00:00<00:00, 1127.11it/s]
+INFO:lm_eval.api.task:Building contexts for mmlu_professional_law on rank 0...
+  0%|          | 0/1534 [00:00<?, ?it/s]  8%|▊         | 116/1534 [00:00<00:01, 1158.96it/s] 15%|█▌        | 233/1534 [00:00<00:01, 1163.94it/s] 23%|██▎       | 350/1534 [00:00<00:02, 492.08it/s]  30%|███       | 466/1534 [00:00<00:01, 635.51it/s] 38%|███▊      | 582/1534 [00:00<00:01, 758.66it/s] 46%|████▌     | 699/1534 [00:00<00:00, 861.60it/s] 53%|█████▎    | 815/1534 [00:01<00:00, 939.92it/s] 61%|██████    | 932/1534 [00:01<00:00, 1001.59it/s] 68%|██████▊   | 1044/1534 [00:01<00:00, 1017.97it/s] 75%|███████▌  | 1154/1534 [00:01<00:00, 1007.95it/s] 83%|████████▎ | 1271/1534 [00:01<00:00, 1052.46it/s] 90%|█████████ | 1383/1534 [00:01<00:00, 1069.93it/s] 97%|█████████▋| 1493/1534 [00:01<00:00, 1054.20it/s]100%|██████████| 1534/1534 [00:01<00:00, 920.38it/s] 
+INFO:lm_eval.api.task:Building contexts for mmlu_world_religions on rank 0...
+  0%|          | 0/171 [00:00<?, ?it/s] 65%|██████▌   | 112/171 [00:00<00:00, 1112.25it/s]100%|██████████| 171/171 [00:00<00:00, 1124.56it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/56168 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/56168 [00:05<81:44:20,  5.24s/it]Running loglikelihood requests:   0%|          | 129/56168 [00:05<28:15, 33.05it/s] Running loglikelihood requests:   0%|          | 257/56168 [00:05<12:31, 74.38it/s]Running loglikelihood requests:   1%|          | 385/56168 [00:05<07:27, 124.78it/s]Running loglikelihood requests:   1%|          | 513/56168 [00:06<05:04, 182.64it/s]Running loglikelihood requests:   1%|          | 641/56168 [00:06<03:43, 247.94it/s]Running loglikelihood requests:   1%|▏         | 769/56168 [00:06<02:53, 319.33it/s]Running loglikelihood requests:   2%|▏         | 897/56168 [00:06<02:20, 392.73it/s]Running loglikelihood requests:   2%|▏         | 1025/56168 [00:06<01:58, 465.00it/s]Running loglikelihood requests:   2%|▏         | 1153/56168 [00:06<01:42, 534.20it/s]Running loglikelihood requests:   2%|▏         | 1281/56168 [00:07<01:32, 595.13it/s]Running loglikelihood requests:   3%|▎         | 1409/56168 [00:07<01:24, 648.63it/s]Running loglikelihood requests:   3%|▎         | 1537/56168 [00:07<01:18, 698.55it/s]Running loglikelihood requests:   3%|▎         | 1665/56168 [00:07<01:13, 740.14it/s]Running loglikelihood requests:   3%|▎         | 1793/56168 [00:07<01:10, 772.98it/s]Running loglikelihood requests:   3%|▎         | 1921/56168 [00:07<01:07, 803.33it/s]Running loglikelihood requests:   4%|▎         | 2049/56168 [00:07<01:05, 827.33it/s]Running loglikelihood requests:   4%|▍         | 2177/56168 [00:08<01:03, 851.77it/s]Running loglikelihood requests:   4%|▍         | 2305/56168 [00:08<01:01, 871.80it/s]Running loglikelihood requests:   4%|▍         | 2433/56168 [00:08<01:00, 889.10it/s]Running loglikelihood requests:   5%|▍         | 2561/56168 [00:08<00:59, 902.02it/s]Running loglikelihood requests:   5%|▍         | 2689/56168 [00:08<00:58, 912.93it/s]Running loglikelihood requests:   5%|▌         | 2817/56168 [00:08<00:57, 929.87it/s]Running loglikelihood requests:   5%|▌         | 2945/56168 [00:08<00:56, 942.06it/s]Running loglikelihood requests:   5%|▌         | 3073/56168 [00:09<00:55, 950.84it/s]Running loglikelihood requests:   6%|▌         | 3201/56168 [00:09<00:54, 966.14it/s]Running loglikelihood requests:   6%|▌         | 3329/56168 [00:09<00:53, 979.32it/s]Running loglikelihood requests:   6%|▌         | 3457/56168 [00:09<00:53, 990.04it/s]Running loglikelihood requests:   6%|▋         | 3585/56168 [00:09<00:52, 999.78it/s]Running loglikelihood requests:   7%|▋         | 3713/56168 [00:09<00:51, 1012.33it/s]Running loglikelihood requests:   7%|▋         | 3841/56168 [00:09<00:51, 1024.70it/s]Running loglikelihood requests:   7%|▋         | 3969/56168 [00:09<00:50, 1033.63it/s]Running loglikelihood requests:   7%|▋         | 4097/56168 [00:10<00:49, 1043.37it/s]Running loglikelihood requests:   8%|▊         | 4225/56168 [00:10<00:49, 1057.56it/s]Running loglikelihood requests:   8%|▊         | 4353/56168 [00:10<00:49, 1040.63it/s]Running loglikelihood requests:   8%|▊         | 4481/56168 [00:10<00:48, 1057.64it/s]Running loglikelihood requests:   8%|▊         | 4609/56168 [00:10<00:48, 1074.06it/s]Running loglikelihood requests:   8%|▊         | 4737/56168 [00:10<00:47, 1087.22it/s]Running loglikelihood requests:   9%|▊         | 4865/56168 [00:10<00:46, 1103.54it/s]Running loglikelihood requests:   9%|▉         | 4993/56168 [00:10<00:45, 1116.76it/s]Running loglikelihood requests:   9%|▉         | 5121/56168 [00:10<00:45, 1128.06it/s]Running loglikelihood requests:   9%|▉         | 5249/56168 [00:11<00:44, 1138.91it/s]Running loglikelihood requests:  10%|▉         | 5377/56168 [00:11<00:44, 1148.56it/s]Running loglikelihood requests:  10%|▉         | 5505/56168 [00:11<00:43, 1168.13it/s]Running loglikelihood requests:  10%|█         | 5633/56168 [00:11<00:42, 1184.48it/s]Running loglikelihood requests:  10%|█         | 5761/56168 [00:11<00:42, 1198.05it/s]Running loglikelihood requests:  10%|█         | 5889/56168 [00:11<00:41, 1210.80it/s]Running loglikelihood requests:  11%|█         | 6017/56168 [00:11<00:41, 1221.65it/s]Running loglikelihood requests:  11%|█         | 6145/56168 [00:11<00:40, 1231.32it/s]Running loglikelihood requests:  11%|█         | 6273/56168 [00:11<00:41, 1193.94it/s]Running loglikelihood requests:  11%|█▏        | 6401/56168 [00:12<00:40, 1216.03it/s]Running loglikelihood requests:  12%|█▏        | 6540/56168 [00:12<00:39, 1266.25it/s]Running loglikelihood requests:  12%|█▏        | 6685/56168 [00:12<00:37, 1319.91it/s]Running loglikelihood requests:  12%|█▏        | 6819/56168 [00:12<00:37, 1325.76it/s]Running loglikelihood requests:  12%|█▏        | 6955/56168 [00:12<00:36, 1335.74it/s]Running loglikelihood requests:  13%|█▎        | 7089/56168 [00:12<00:37, 1316.34it/s]Running loglikelihood requests:  13%|█▎        | 7221/56168 [00:12<00:37, 1316.85it/s]Running loglikelihood requests:  13%|█▎        | 7353/56168 [00:12<00:37, 1311.53it/s]Running loglikelihood requests:  13%|█▎        | 7485/56168 [00:12<00:37, 1310.94it/s]Running loglikelihood requests:  14%|█▎        | 7617/56168 [00:12<00:37, 1304.00it/s]Running loglikelihood requests:  14%|█▍        | 7748/56168 [00:13<00:37, 1298.04it/s]Running loglikelihood requests:  14%|█▍        | 7937/56168 [00:13<00:40, 1194.03it/s]Running loglikelihood requests:  15%|█▍        | 8193/56168 [00:13<00:37, 1292.99it/s]Running loglikelihood requests:  15%|█▌        | 8449/56168 [00:13<00:35, 1332.19it/s]Running loglikelihood requests:  15%|█▌        | 8705/56168 [00:13<00:34, 1384.22it/s]Running loglikelihood requests:  16%|█▌        | 8961/56168 [00:13<00:33, 1425.07it/s]Running loglikelihood requests:  16%|█▋        | 9217/56168 [00:14<00:32, 1463.14it/s]Running loglikelihood requests:  17%|█▋        | 9473/56168 [00:14<00:31, 1498.94it/s]Running loglikelihood requests:  17%|█▋        | 9729/56168 [00:14<00:30, 1530.43it/s]Running loglikelihood requests:  18%|█▊        | 9985/56168 [00:14<00:29, 1562.71it/s]Running loglikelihood requests:  18%|█▊        | 10241/56168 [00:14<00:28, 1593.34it/s]Running loglikelihood requests:  19%|█▊        | 10497/56168 [00:14<00:28, 1622.96it/s]Running loglikelihood requests:  19%|█▉        | 10753/56168 [00:15<00:27, 1650.67it/s]Running loglikelihood requests:  20%|█▉        | 11009/56168 [00:15<00:26, 1676.52it/s]Running loglikelihood requests:  20%|██        | 11265/56168 [00:15<00:26, 1701.03it/s]Running loglikelihood requests:  21%|██        | 11521/56168 [00:15<00:25, 1728.40it/s]Running loglikelihood requests:  21%|██        | 11777/56168 [00:15<00:25, 1753.24it/s]Running loglikelihood requests:  21%|██▏       | 12033/56168 [00:15<00:24, 1775.68it/s]Running loglikelihood requests:  22%|██▏       | 12293/56168 [00:15<00:24, 1812.81it/s]Running loglikelihood requests:  22%|██▏       | 12549/56168 [00:16<00:23, 1838.18it/s]Running loglikelihood requests:  23%|██▎       | 12805/56168 [00:16<00:23, 1861.60it/s]Running loglikelihood requests:  23%|██▎       | 13061/56168 [00:16<00:22, 1881.37it/s]Running loglikelihood requests:  24%|██▎       | 13317/56168 [00:16<00:22, 1901.50it/s]Running loglikelihood requests:  24%|██▍       | 13573/56168 [00:16<00:22, 1919.86it/s]Running loglikelihood requests:  25%|██▍       | 13829/56168 [00:16<00:21, 1935.11it/s]Running loglikelihood requests:  25%|██▌       | 14085/56168 [00:16<00:21, 1947.80it/s]Running loglikelihood requests:  26%|██▌       | 14341/56168 [00:16<00:21, 1945.12it/s]Running loglikelihood requests:  26%|██▌       | 14597/56168 [00:17<00:21, 1958.00it/s]Running loglikelihood requests:  26%|██▋       | 14853/56168 [00:17<00:20, 1968.14it/s]Running loglikelihood requests:  27%|██▋       | 15109/56168 [00:17<00:20, 1983.03it/s]Running loglikelihood requests:  27%|██▋       | 15365/56168 [00:17<00:20, 2000.71it/s]Running loglikelihood requests:  28%|██▊       | 15621/56168 [00:17<00:20, 2009.20it/s]Running loglikelihood requests:  28%|██▊       | 15877/56168 [00:17<00:19, 2016.35it/s]Running loglikelihood requests:  29%|██▊       | 16133/56168 [00:17<00:19, 2023.38it/s]Running loglikelihood requests:  29%|██▉       | 16393/56168 [00:17<00:19, 2038.78it/s]Running loglikelihood requests:  30%|██▉       | 16649/56168 [00:18<00:19, 2043.97it/s]Running loglikelihood requests:  30%|███       | 16905/56168 [00:18<00:19, 2047.68it/s]Running loglikelihood requests:  31%|███       | 17161/56168 [00:18<00:19, 2050.58it/s]Running loglikelihood requests:  31%|███       | 17417/56168 [00:18<00:18, 2055.63it/s]Running loglikelihood requests:  31%|███▏      | 17673/56168 [00:18<00:18, 2055.06it/s]Running loglikelihood requests:  32%|███▏      | 17929/56168 [00:18<00:18, 2067.00it/s]Running loglikelihood requests:  32%|███▏      | 18189/56168 [00:18<00:18, 2093.80it/s]Running loglikelihood requests:  33%|███▎      | 18445/56168 [00:18<00:17, 2100.51it/s]Running loglikelihood requests:  33%|███▎      | 18701/56168 [00:19<00:17, 2105.57it/s]Running loglikelihood requests:  34%|███▍      | 18957/56168 [00:19<00:17, 2110.85it/s]Running loglikelihood requests:  34%|███▍      | 19213/56168 [00:19<00:17, 2113.38it/s]Running loglikelihood requests:  35%|███▍      | 19469/56168 [00:19<00:17, 2118.96it/s]Running loglikelihood requests:  35%|███▌      | 19725/56168 [00:19<00:17, 2127.50it/s]Running loglikelihood requests:  36%|███▌      | 19981/56168 [00:19<00:16, 2135.58it/s]Running loglikelihood requests:  36%|███▌      | 20237/56168 [00:19<00:16, 2143.65it/s]Running loglikelihood requests:  36%|███▋      | 20493/56168 [00:19<00:16, 2148.13it/s]Running loglikelihood requests:  37%|███▋      | 20749/56168 [00:20<00:16, 2162.85it/s]Running loglikelihood requests:  37%|███▋      | 21005/56168 [00:20<00:16, 2176.47it/s]Running loglikelihood requests:  38%|███▊      | 21261/56168 [00:20<00:16, 2169.57it/s]Running loglikelihood requests:  38%|███▊      | 21517/56168 [00:20<00:15, 2180.74it/s]Running loglikelihood requests:  39%|███▉      | 21777/56168 [00:20<00:15, 2198.08it/s]Running loglikelihood requests:  39%|███▉      | 22037/56168 [00:20<00:15, 2215.68it/s]Running loglikelihood requests:  40%|███▉      | 22293/56168 [00:20<00:15, 2220.51it/s]Running loglikelihood requests:  40%|████      | 22549/56168 [00:20<00:15, 2227.30it/s]Running loglikelihood requests:  41%|████      | 22809/56168 [00:20<00:14, 2240.56it/s]Running loglikelihood requests:  41%|████      | 23069/56168 [00:21<00:14, 2258.33it/s]Running loglikelihood requests:  42%|████▏     | 23325/56168 [00:21<00:14, 2268.84it/s]Running loglikelihood requests:  42%|████▏     | 23585/56168 [00:21<00:14, 2283.55it/s]Running loglikelihood requests:  42%|████▏     | 23841/56168 [00:21<00:14, 2288.28it/s]Running loglikelihood requests:  43%|████▎     | 24097/56168 [00:21<00:14, 2290.33it/s]Running loglikelihood requests:  43%|████▎     | 24353/56168 [00:21<00:13, 2293.54it/s]Running loglikelihood requests:  44%|████▍     | 24609/56168 [00:21<00:13, 2298.51it/s]Running loglikelihood requests:  44%|████▍     | 24865/56168 [00:21<00:13, 2301.94it/s]Running loglikelihood requests:  45%|████▍     | 25121/56168 [00:21<00:13, 2309.21it/s]Running loglikelihood requests:  45%|████▌     | 25377/56168 [00:22<00:13, 2313.76it/s]Running loglikelihood requests:  46%|████▌     | 25637/56168 [00:22<00:13, 2329.33it/s]Running loglikelihood requests:  46%|████▌     | 25893/56168 [00:22<00:12, 2343.28it/s]Running loglikelihood requests:  47%|████▋     | 26149/56168 [00:22<00:12, 2349.80it/s]Running loglikelihood requests:  47%|████▋     | 26405/56168 [00:22<00:12, 2354.62it/s]Running loglikelihood requests:  47%|████▋     | 26661/56168 [00:22<00:12, 2358.72it/s]Running loglikelihood requests:  48%|████▊     | 26917/56168 [00:22<00:12, 2363.20it/s]Running loglikelihood requests:  48%|████▊     | 27173/56168 [00:22<00:12, 2368.82it/s]Running loglikelihood requests:  49%|████▉     | 27429/56168 [00:22<00:12, 2371.98it/s]Running loglikelihood requests:  49%|████▉     | 27693/56168 [00:23<00:11, 2393.96it/s]Running loglikelihood requests:  50%|████▉     | 27949/56168 [00:23<00:11, 2392.70it/s]Running loglikelihood requests:  50%|█████     | 28205/56168 [00:23<00:11, 2391.18it/s]Running loglikelihood requests:  51%|█████     | 28461/56168 [00:23<00:11, 2396.67it/s]Running loglikelihood requests:  51%|█████     | 28717/56168 [00:23<00:11, 2398.64it/s]Running loglikelihood requests:  52%|█████▏    | 28973/56168 [00:23<00:11, 2402.49it/s]Running loglikelihood requests:  52%|█████▏    | 29229/56168 [00:23<00:11, 2423.79it/s]Running loglikelihood requests:  52%|█████▏    | 29485/56168 [00:23<00:10, 2438.94it/s]Running loglikelihood requests:  53%|█████▎    | 29745/56168 [00:23<00:10, 2455.32it/s]Running loglikelihood requests:  53%|█████▎    | 30001/56168 [00:23<00:10, 2456.28it/s]Running loglikelihood requests:  54%|█████▍    | 30257/56168 [00:24<00:10, 2461.03it/s]Running loglikelihood requests:  54%|█████▍    | 30517/56168 [00:24<00:10, 2472.72it/s]Running loglikelihood requests:  55%|█████▍    | 30773/56168 [00:24<00:10, 2473.45it/s]Running loglikelihood requests:  55%|█████▌    | 31029/56168 [00:24<00:10, 2477.00it/s]Running loglikelihood requests:  56%|█████▌    | 31285/56168 [00:24<00:10, 2480.57it/s]Running loglikelihood requests:  56%|█████▌    | 31541/56168 [00:24<00:09, 2485.23it/s]Running loglikelihood requests:  57%|█████▋    | 31797/56168 [00:24<00:09, 2488.39it/s]Running loglikelihood requests:  57%|█████▋    | 32053/56168 [00:24<00:09, 2492.93it/s]Running loglikelihood requests:  58%|█████▊    | 32313/56168 [00:24<00:09, 2502.87it/s]Running loglikelihood requests:  58%|█████▊    | 32573/56168 [00:24<00:09, 2513.50it/s]Running loglikelihood requests:  58%|█████▊    | 32829/56168 [00:25<00:09, 2509.04it/s]Running loglikelihood requests:  59%|█████▉    | 33085/56168 [00:25<00:09, 2517.99it/s]Running loglikelihood requests:  59%|█████▉    | 33341/56168 [00:25<00:09, 2525.13it/s]Running loglikelihood requests:  60%|█████▉    | 33597/56168 [00:25<00:08, 2525.49it/s]Running loglikelihood requests:  60%|██████    | 33853/56168 [00:25<00:08, 2524.90it/s]Running loglikelihood requests:  61%|██████    | 34109/56168 [00:25<00:08, 2522.93it/s]Running loglikelihood requests:  61%|██████    | 34365/56168 [00:25<00:08, 2524.55it/s]Running loglikelihood requests:  62%|██████▏   | 34621/56168 [00:25<00:08, 2526.28it/s]Running loglikelihood requests:  62%|██████▏   | 34877/56168 [00:25<00:08, 2529.33it/s]Running loglikelihood requests:  63%|██████▎   | 35133/56168 [00:26<00:08, 2532.91it/s]Running loglikelihood requests:  63%|██████▎   | 35389/56168 [00:26<00:08, 2533.78it/s]Running loglikelihood requests:  63%|██████▎   | 35645/56168 [00:26<00:08, 2541.18it/s]Running loglikelihood requests:  64%|██████▍   | 35901/56168 [00:26<00:07, 2541.71it/s]Running loglikelihood requests:  64%|██████▍   | 36157/56168 [00:26<00:07, 2545.39it/s]Running loglikelihood requests:  65%|██████▍   | 36414/56168 [00:26<00:07, 2552.68it/s]Running loglikelihood requests:  65%|██████▌   | 36670/56168 [00:26<00:07, 2554.08it/s]Running loglikelihood requests:  66%|██████▌   | 36932/56168 [00:26<00:07, 2573.49it/s]Running loglikelihood requests:  66%|██████▌   | 37190/56168 [00:26<00:07, 2555.43it/s]Running loglikelihood requests:  67%|██████▋   | 37446/56168 [00:26<00:07, 2552.81it/s]Running loglikelihood requests:  67%|██████▋   | 37702/56168 [00:27<00:07, 2551.84it/s]Running loglikelihood requests:  68%|██████▊   | 37958/56168 [00:27<00:07, 2549.97it/s]Running loglikelihood requests:  68%|██████▊   | 38223/56168 [00:27<00:06, 2579.81it/s]Running loglikelihood requests:  69%|██████▊   | 38482/56168 [00:27<00:06, 2579.29it/s]Running loglikelihood requests:  69%|██████▉   | 38740/56168 [00:27<00:06, 2578.07it/s]Running loglikelihood requests:  69%|██████▉   | 38998/56168 [00:27<00:06, 2574.05it/s]Running loglikelihood requests:  70%|██████▉   | 39256/56168 [00:27<00:06, 2574.12it/s]Running loglikelihood requests:  70%|███████   | 39514/56168 [00:27<00:06, 2575.54it/s]Running loglikelihood requests:  71%|███████   | 39772/56168 [00:27<00:06, 2575.79it/s]Running loglikelihood requests:  71%|███████▏  | 40031/56168 [00:27<00:06, 2579.96it/s]Running loglikelihood requests:  72%|███████▏  | 40293/56168 [00:28<00:06, 2591.51it/s]Running loglikelihood requests:  72%|███████▏  | 40560/56168 [00:28<00:05, 2614.89it/s]Running loglikelihood requests:  73%|███████▎  | 40828/56168 [00:28<00:05, 2633.99it/s]Running loglikelihood requests:  73%|███████▎  | 41096/56168 [00:28<00:05, 2647.50it/s]Running loglikelihood requests:  74%|███████▎  | 41361/56168 [00:28<00:05, 2628.94it/s]Running loglikelihood requests:  74%|███████▍  | 41624/56168 [00:28<00:05, 2626.41it/s]Running loglikelihood requests:  75%|███████▍  | 41887/56168 [00:28<00:05, 2626.43it/s]Running loglikelihood requests:  75%|███████▌  | 42151/56168 [00:28<00:05, 2630.29it/s]Running loglikelihood requests:  76%|███████▌  | 42415/56168 [00:28<00:05, 2630.75it/s]Running loglikelihood requests:  76%|███████▌  | 42683/56168 [00:28<00:05, 2645.21it/s]Running loglikelihood requests:  76%|███████▋  | 42954/56168 [00:29<00:04, 2664.24it/s]Running loglikelihood requests:  77%|███████▋  | 43221/56168 [00:29<00:07, 1644.39it/s]Running loglikelihood requests:  77%|███████▋  | 43517/56168 [00:29<00:06, 1918.95it/s]Running loglikelihood requests:  78%|███████▊  | 43813/56168 [00:29<00:05, 2157.82it/s]Running loglikelihood requests:  79%|███████▊  | 44100/56168 [00:29<00:05, 2333.68it/s]Running loglikelihood requests:  79%|███████▉  | 44369/56168 [00:29<00:05, 2196.11it/s]Running loglikelihood requests:  79%|███████▉  | 44653/56168 [00:29<00:04, 2358.12it/s]Running loglikelihood requests:  80%|████████  | 44943/56168 [00:29<00:04, 2501.40it/s]Running loglikelihood requests:  81%|████████  | 45235/56168 [00:30<00:04, 2616.05it/s]Running loglikelihood requests:  81%|████████  | 45520/56168 [00:30<00:03, 2681.87it/s]Running loglikelihood requests:  82%|████████▏ | 45797/56168 [00:30<00:04, 2414.88it/s]Running loglikelihood requests:  82%|████████▏ | 46088/56168 [00:30<00:03, 2547.29it/s]Running loglikelihood requests:  83%|████████▎ | 46381/56168 [00:30<00:03, 2652.80it/s]Running loglikelihood requests:  83%|████████▎ | 46675/56168 [00:30<00:03, 2734.02it/s]Running loglikelihood requests:  84%|████████▎ | 46954/56168 [00:30<00:03, 2470.16it/s]Running loglikelihood requests:  84%|████████▍ | 47253/56168 [00:30<00:03, 2610.23it/s]Running loglikelihood requests:  85%|████████▍ | 47557/56168 [00:30<00:03, 2729.41it/s]Running loglikelihood requests:  85%|████████▌ | 47849/56168 [00:31<00:03, 2501.14it/s]Running loglikelihood requests:  86%|████████▌ | 48155/56168 [00:31<00:03, 2650.27it/s]Running loglikelihood requests:  86%|████████▋ | 48463/56168 [00:31<00:02, 2768.95it/s]Running loglikelihood requests:  87%|████████▋ | 48747/56168 [00:31<00:02, 2510.34it/s]Running loglikelihood requests:  87%|████████▋ | 49058/56168 [00:31<00:02, 2670.12it/s]Running loglikelihood requests:  88%|████████▊ | 49366/56168 [00:31<00:02, 2782.86it/s]Running loglikelihood requests:  88%|████████▊ | 49651/56168 [00:31<00:02, 2537.18it/s]Running loglikelihood requests:  89%|████████▉ | 49976/56168 [00:31<00:02, 2728.00it/s]Running loglikelihood requests:  90%|████████▉ | 50281/56168 [00:32<00:02, 2549.88it/s]Running loglikelihood requests:  90%|█████████ | 50601/56168 [00:32<00:02, 2721.17it/s]Running loglikelihood requests:  91%|█████████ | 50921/56168 [00:32<00:02, 2577.16it/s]Running loglikelihood requests:  91%|█████████▏| 51254/56168 [00:32<00:01, 2773.26it/s]Running loglikelihood requests:  92%|█████████▏| 51561/56168 [00:32<00:01, 2586.96it/s]Running loglikelihood requests:  92%|█████████▏| 51884/56168 [00:32<00:01, 2754.06it/s]Running loglikelihood requests:  93%|█████████▎| 52201/56168 [00:32<00:01, 2599.24it/s]Running loglikelihood requests:  94%|█████████▎| 52533/56168 [00:32<00:01, 2785.93it/s]Running loglikelihood requests:  94%|█████████▍| 52845/56168 [00:32<00:01, 2615.89it/s]Running loglikelihood requests:  95%|█████████▍| 53188/56168 [00:33<00:01, 2827.48it/s]Running loglikelihood requests:  95%|█████████▌| 53485/56168 [00:33<00:01, 2609.60it/s]Running loglikelihood requests:  96%|█████████▌| 53835/56168 [00:33<00:00, 2841.50it/s]Running loglikelihood requests:  96%|█████████▋| 54129/56168 [00:33<00:00, 2619.22it/s]Running loglikelihood requests:  97%|█████████▋| 54490/56168 [00:33<00:00, 2877.82it/s]Running loglikelihood requests:  98%|█████████▊| 54788/56168 [00:33<00:00, 2667.26it/s]Running loglikelihood requests:  98%|█████████▊| 55149/56168 [00:33<00:00, 2648.99it/s]Running loglikelihood requests:  99%|█████████▉| 55485/56168 [00:33<00:00, 2829.64it/s]Running loglikelihood requests:  99%|█████████▉| 55789/56168 [00:34<00:00, 2635.14it/s]Running loglikelihood requests: 100%|█████████▉| 56166/56168 [00:34<00:00, 2927.47it/s]Running loglikelihood requests: 100%|██████████| 56168/56168 [00:34<00:00, 1645.30it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_abstract_algebra
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_anatomy
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_astronomy
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_business_ethics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_clinical_knowledge
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_college_biology
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_college_chemistry
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_college_computer_science
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_college_mathematics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_college_medicine
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_college_physics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_computer_security
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_conceptual_physics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_econometrics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_electrical_engineering
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_elementary_mathematics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_formal_logic
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_global_facts
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_biology
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_chemistry
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_computer_science
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_european_history
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_geography
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_government_and_politics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_macroeconomics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_mathematics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_microeconomics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_physics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_psychology
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_statistics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_us_history
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_high_school_world_history
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_human_aging
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_human_sexuality
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_international_law
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_jurisprudence
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_logical_fallacies
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_machine_learning
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_management
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_marketing
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_medical_genetics
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_miscellaneous
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_moral_disputes
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_moral_scenarios
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_nutrition
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_philosophy
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_prehistory
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_professional_accounting
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_professional_law
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_professional_medicine
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_professional_psychology
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_public_relations
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_security_studies
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_sociology
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_us_foreign_policy
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_virology
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: mmlu_world_religions
+Passed argument batch_size = auto:1. Detecting largest batch size
+Determined largest batch size: 32
+hf (pretrained=google/gemma-3-1b-it), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto (32)
+|                 Tasks                 |Version|Filter|n-shot|Metric|   |Value |   |Stderr|
+|---------------------------------------|------:|------|-----:|------|---|-----:|---|-----:|
+|mmlu                                   |      2|none  |      |acc   |↑  |0.3868|±  |0.0040|
+| - humanities                          |      2|none  |      |acc   |↑  |0.3630|±  |0.0069|
+|  - formal_logic                       |      1|none  |     0|acc   |↑  |0.3413|±  |0.0424|
+|  - high_school_european_history       |      1|none  |     0|acc   |↑  |0.4909|±  |0.0390|
+|  - high_school_us_history             |      1|none  |     0|acc   |↑  |0.4657|±  |0.0350|
+|  - high_school_world_history          |      1|none  |     0|acc   |↑  |0.4684|±  |0.0325|
+|  - international_law                  |      1|none  |     0|acc   |↑  |0.5207|±  |0.0456|
+|  - jurisprudence                      |      1|none  |     0|acc   |↑  |0.4815|±  |0.0483|
+|  - logical_fallacies                  |      1|none  |     0|acc   |↑  |0.4294|±  |0.0389|
+|  - moral_disputes                     |      1|none  |     0|acc   |↑  |0.4220|±  |0.0266|
+|  - moral_scenarios                    |      1|none  |     0|acc   |↑  |0.2335|±  |0.0141|
+|  - philosophy                         |      1|none  |     0|acc   |↑  |0.4277|±  |0.0281|
+|  - prehistory                         |      1|none  |     0|acc   |↑  |0.4568|±  |0.0277|
+|  - professional_law                   |      1|none  |     0|acc   |↑  |0.3077|±  |0.0118|
+|  - world_religions                    |      1|none  |     0|acc   |↑  |0.4971|±  |0.0383|
+| - other                               |      2|none  |      |acc   |↑  |0.4332|±  |0.0087|
+|  - business_ethics                    |      1|none  |     0|acc   |↑  |0.3800|±  |0.0488|
+|  - clinical_knowledge                 |      1|none  |     0|acc   |↑  |0.4113|±  |0.0303|
+|  - college_medicine                   |      1|none  |     0|acc   |↑  |0.3815|±  |0.0370|
+|  - global_facts                       |      1|none  |     0|acc   |↑  |0.3600|±  |0.0482|
+|  - human_aging                        |      1|none  |     0|acc   |↑  |0.4305|±  |0.0332|
+|  - management                         |      1|none  |     0|acc   |↑  |0.5728|±  |0.0490|
+|  - marketing                          |      1|none  |     0|acc   |↑  |0.6197|±  |0.0318|
+|  - medical_genetics                   |      1|none  |     0|acc   |↑  |0.4100|±  |0.0494|
+|  - miscellaneous                      |      1|none  |     0|acc   |↑  |0.5198|±  |0.0179|
+|  - nutrition                          |      1|none  |     0|acc   |↑  |0.4150|±  |0.0282|
+|  - professional_accounting            |      1|none  |     0|acc   |↑  |0.2801|±  |0.0268|
+|  - professional_medicine              |      1|none  |     0|acc   |↑  |0.2941|±  |0.0277|
+|  - virology                           |      1|none  |     0|acc   |↑  |0.3795|±  |0.0378|
+| - social sciences                     |      2|none  |      |acc   |↑  |0.4524|±  |0.0088|
+|  - econometrics                       |      1|none  |     0|acc   |↑  |0.2281|±  |0.0395|
+|  - high_school_geography              |      1|none  |     0|acc   |↑  |0.5051|±  |0.0356|
+|  - high_school_government_and_politics|      1|none  |     0|acc   |↑  |0.5130|±  |0.0361|
+|  - high_school_macroeconomics         |      1|none  |     0|acc   |↑  |0.3359|±  |0.0239|
+|  - high_school_microeconomics         |      1|none  |     0|acc   |↑  |0.3697|±  |0.0314|
+|  - high_school_psychology             |      1|none  |     0|acc   |↑  |0.5339|±  |0.0214|
+|  - human_sexuality                    |      1|none  |     0|acc   |↑  |0.5115|±  |0.0438|
+|  - professional_psychology            |      1|none  |     0|acc   |↑  |0.3693|±  |0.0195|
+|  - public_relations                   |      1|none  |     0|acc   |↑  |0.4636|±  |0.0478|
+|  - security_studies                   |      1|none  |     0|acc   |↑  |0.5347|±  |0.0319|
+|  - sociology                          |      1|none  |     0|acc   |↑  |0.6070|±  |0.0345|
+|  - us_foreign_policy                  |      1|none  |     0|acc   |↑  |0.6000|±  |0.0492|
+| - stem                                |      2|none  |      |acc   |↑  |0.3124|±  |0.0081|
+|  - abstract_algebra                   |      1|none  |     0|acc   |↑  |0.2800|±  |0.0451|
+|  - anatomy                            |      1|none  |     0|acc   |↑  |0.4519|±  |0.0430|
+|  - astronomy                          |      1|none  |     0|acc   |↑  |0.3750|±  |0.0394|
+|  - college_biology                    |      1|none  |     0|acc   |↑  |0.3403|±  |0.0396|
+|  - college_chemistry                  |      1|none  |     0|acc   |↑  |0.3000|±  |0.0461|
+|  - college_computer_science           |      1|none  |     0|acc   |↑  |0.2700|±  |0.0446|
+|  - college_mathematics                |      1|none  |     0|acc   |↑  |0.2400|±  |0.0429|
+|  - college_physics                    |      1|none  |     0|acc   |↑  |0.2059|±  |0.0402|
+|  - computer_security                  |      1|none  |     0|acc   |↑  |0.4800|±  |0.0502|
+|  - conceptual_physics                 |      1|none  |     0|acc   |↑  |0.3702|±  |0.0316|
+|  - electrical_engineering             |      1|none  |     0|acc   |↑  |0.4207|±  |0.0411|
+|  - elementary_mathematics             |      1|none  |     0|acc   |↑  |0.2302|±  |0.0217|
+|  - high_school_biology                |      1|none  |     0|acc   |↑  |0.4258|±  |0.0281|
+|  - high_school_chemistry              |      1|none  |     0|acc   |↑  |0.2857|±  |0.0318|
+|  - high_school_computer_science       |      1|none  |     0|acc   |↑  |0.3300|±  |0.0473|
+|  - high_school_mathematics            |      1|none  |     0|acc   |↑  |0.2296|±  |0.0256|
+|  - high_school_physics                |      1|none  |     0|acc   |↑  |0.2252|±  |0.0341|
+|  - high_school_statistics             |      1|none  |     0|acc   |↑  |0.2037|±  |0.0275|
+|  - machine_learning                   |      1|none  |     0|acc   |↑  |0.3750|±  |0.0460|
+
+|      Groups      |Version|Filter|n-shot|Metric|   |Value |   |Stderr|
+|------------------|------:|------|------|------|---|-----:|---|-----:|
+|mmlu              |      2|none  |      |acc   |↑  |0.3868|±  |0.0040|
+| - humanities     |      2|none  |      |acc   |↑  |0.3630|±  |0.0069|
+| - other          |      2|none  |      |acc   |↑  |0.4332|±  |0.0087|
+| - social sciences|      2|none  |      |acc   |↑  |0.4524|±  |0.0088|
+| - stem           |      2|none  |      |acc   |↑  |0.3124|±  |0.0081|
+

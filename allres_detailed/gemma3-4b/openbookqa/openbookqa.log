@@ -1,0 +1,21 @@
+INFO 04-10 08:22:37 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['openbookqa']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'google/gemma-3-4b-it'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.52s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.08s/it]
+INFO:lm_eval.models.huggingface:Model type is 'gemma3', part of the Gemma family--a BOS token will be used as Gemma underperforms without it.
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of openbookqa from None to 0
+INFO:lm_eval.api.task:Building contexts for openbookqa on rank 0...
+  0%|          | 0/500 [00:00<?, ?it/s] 80%|███████▉  | 399/500 [00:00<00:00, 3985.05it/s]100%|██████████| 500/500 [00:00<00:00, 3989.86it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/2000 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/2000 [00:01<35:11,  1.06s/it]Running loglikelihood requests:   9%|▊         | 171/2000 [00:01<00:09, 187.30it/s]Running loglikelihood requests:  17%|█▋        | 333/2000 [00:01<00:04, 362.01it/s]Running loglikelihood requests:  25%|██▌       | 506/2000 [00:01<00:02, 555.55it/s]Running loglikelihood requests:  34%|███▎      | 672/2000 [00:01<00:01, 738.25it/s]Running loglikelihood requests:  42%|████▏     | 834/2000 [00:01<00:01, 903.32it/s]Running loglikelihood requests:  51%|█████     | 1016/2000 [00:01<00:00, 1104.20it/s]Running loglikelihood requests:  63%|██████▎   | 1258/2000 [00:01<00:00, 1418.01it/s]Running loglikelihood requests:  75%|███████▍  | 1491/2000 [00:02<00:00, 1400.92it/s]Running loglikelihood requests:  93%|█████████▎| 1868/2000 [00:02<00:00, 1750.86it/s]Running loglikelihood requests: 100%|██████████| 2000/2000 [00:02<00:00, 895.01it/s] 
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: openbookqa
+hf (pretrained=google/gemma-3-4b-it), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|  Tasks   |Version|Filter|n-shot| Metric |   |Value|   |Stderr|
+|----------|------:|------|-----:|--------|---|----:|---|-----:|
+|openbookqa|      1|none  |     0|acc     |↑  |0.364|±  |0.0215|
+|          |       |none  |     0|acc_norm|↑  |0.466|±  |0.0223|
+

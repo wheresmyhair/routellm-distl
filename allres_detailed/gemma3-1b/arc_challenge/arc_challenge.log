@@ -1,0 +1,20 @@
+INFO 04-10 07:27:48 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['arc_challenge']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'google/gemma-3-1b-it'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+INFO:lm_eval.models.huggingface:Model type is 'gemma3_text', part of the Gemma family--a BOS token will be used as Gemma underperforms without it.
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of arc_challenge from None to 0
+INFO:lm_eval.api.task:Building contexts for arc_challenge on rank 0...
+  0%|          | 0/1172 [00:00<?, ?it/s] 18%|█▊        | 209/1172 [00:00<00:00, 2089.38it/s] 36%|███▌      | 420/1172 [00:00<00:00, 2096.87it/s] 54%|█████▍    | 631/1172 [00:00<00:00, 2102.06it/s] 72%|███████▏  | 846/1172 [00:00<00:00, 2119.41it/s] 90%|█████████ | 1059/1172 [00:00<00:00, 2122.51it/s]100%|██████████| 1172/1172 [00:00<00:00, 2118.14it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/4687 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/4687 [00:00<1:06:58,  1.17it/s]Running loglikelihood requests:   3%|▎         | 136/4687 [00:00<00:24, 184.22it/s]Running loglikelihood requests:   6%|▌         | 272/4687 [00:01<00:12, 365.28it/s]Running loglikelihood requests:   9%|▊         | 407/4687 [00:01<00:07, 538.82it/s]Running loglikelihood requests:  11%|█▏        | 536/4687 [00:01<00:06, 685.43it/s]Running loglikelihood requests:  15%|█▍        | 690/4687 [00:01<00:04, 877.93it/s]Running loglikelihood requests:  17%|█▋        | 814/4687 [00:02<00:09, 420.06it/s]Running loglikelihood requests:  20%|██        | 945/4687 [00:02<00:11, 331.80it/s]Running loglikelihood requests:  26%|██▌       | 1225/4687 [00:02<00:06, 544.99it/s]Running loglikelihood requests:  32%|███▏      | 1496/4687 [00:02<00:04, 750.47it/s]Running loglikelihood requests:  38%|███▊      | 1775/4687 [00:03<00:03, 960.99it/s]Running loglikelihood requests:  44%|████▍     | 2054/4687 [00:03<00:02, 1158.69it/s]Running loglikelihood requests:  50%|████▉     | 2339/4687 [00:03<00:01, 1353.40it/s]Running loglikelihood requests:  56%|█████▌    | 2619/4687 [00:03<00:01, 1506.03it/s]Running loglikelihood requests:  62%|██████▏   | 2883/4687 [00:03<00:01, 1644.05it/s]Running loglikelihood requests:  67%|██████▋   | 3163/4687 [00:03<00:00, 1798.02it/s]Running loglikelihood requests:  74%|███████▎  | 3451/4687 [00:03<00:00, 1953.09it/s]Running loglikelihood requests:  80%|███████▉  | 3729/4687 [00:04<00:00, 2075.49it/s]Running loglikelihood requests:  86%|████████▌ | 4029/4687 [00:04<00:00, 2215.92it/s]Running loglikelihood requests:  92%|█████████▏| 4332/4687 [00:04<00:00, 2332.65it/s]Running loglikelihood requests: 100%|█████████▉| 4675/4687 [00:04<00:00, 2455.49it/s]Running loglikelihood requests: 100%|██████████| 4687/4687 [00:04<00:00, 1066.67it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: arc_challenge
+hf (pretrained=google/gemma-3-1b-it), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|    Tasks    |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|arc_challenge|      1|none  |     0|acc     |↑  |0.3609|±  |0.0140|
+|             |       |none  |     0|acc_norm|↑  |0.3788|±  |0.0142|
+

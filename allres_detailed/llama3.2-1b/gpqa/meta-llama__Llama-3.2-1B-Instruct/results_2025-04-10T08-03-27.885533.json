@@ -1,0 +1,1205 @@
+{
+  "results": {
+    "gpqa_diamond_cot_n_shot": {
+      "alias": "gpqa_diamond_cot_n_shot",
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.12626262626262627,
+      "exact_match_stderr,flexible-extract": 0.023664359402880236
+    },
+    "gpqa_diamond_cot_zeroshot": {
+      "alias": "gpqa_diamond_cot_zeroshot",
+      "exact_match,strict-match": 0.005050505050505051,
+      "exact_match_stderr,strict-match": 0.00505050505050505,
+      "exact_match,flexible-extract": 0.12626262626262627,
+      "exact_match_stderr,flexible-extract": 0.023664359402880236
+    },
+    "gpqa_diamond_generative_n_shot": {
+      "alias": "gpqa_diamond_generative_n_shot",
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.24242424242424243,
+      "exact_match_stderr,flexible-extract": 0.030532892233932036
+    },
+    "gpqa_diamond_n_shot": {
+      "alias": "gpqa_diamond_n_shot",
+      "acc,none": 0.2474747474747475,
+      "acc_stderr,none": 0.030746300742124505,
+      "acc_norm,none": 0.2474747474747475,
+      "acc_norm_stderr,none": 0.030746300742124505
+    },
+    "gpqa_diamond_zeroshot": {
+      "alias": "gpqa_diamond_zeroshot",
+      "acc,none": 0.2676767676767677,
+      "acc_stderr,none": 0.031544498882702866,
+      "acc_norm,none": 0.2676767676767677,
+      "acc_norm_stderr,none": 0.031544498882702866
+    },
+    "gpqa_extended_cot_n_shot": {
+      "alias": "gpqa_extended_cot_n_shot",
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.1043956043956044,
+      "exact_match_stderr,flexible-extract": 0.013097878683800787
+    },
+    "gpqa_extended_cot_zeroshot": {
+      "alias": "gpqa_extended_cot_zeroshot",
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.10256410256410256,
+      "exact_match_stderr,flexible-extract": 0.012995744358440916
+    },
+    "gpqa_extended_generative_n_shot": {
+      "alias": "gpqa_extended_generative_n_shot",
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.23809523809523808,
+      "exact_match_stderr,flexible-extract": 0.01824431019468863
+    },
+    "gpqa_extended_n_shot": {
+      "alias": "gpqa_extended_n_shot",
+      "acc,none": 0.26373626373626374,
+      "acc_stderr,none": 0.018875713580372492,
+      "acc_norm,none": 0.26373626373626374,
+      "acc_norm_stderr,none": 0.018875713580372492
+    },
+    "gpqa_extended_zeroshot": {
+      "alias": "gpqa_extended_zeroshot",
+      "acc,none": 0.25274725274725274,
+      "acc_stderr,none": 0.0186156725416002,
+      "acc_norm,none": 0.25274725274725274,
+      "acc_norm_stderr,none": 0.0186156725416002
+    },
+    "gpqa_main_cot_n_shot": {
+      "alias": "gpqa_main_cot_n_shot",
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.09821428571428571,
+      "exact_match_stderr,flexible-extract": 0.014076194049424085
+    },
+    "gpqa_main_cot_zeroshot": {
+      "alias": "gpqa_main_cot_zeroshot",
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.08258928571428571,
+      "exact_match_stderr,flexible-extract": 0.013019370837375237
+    },
+    "gpqa_main_generative_n_shot": {
+      "alias": "gpqa_main_generative_n_shot",
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.23883928571428573,
+      "exact_match_stderr,flexible-extract": 0.020166814463956895
+    },
+    "gpqa_main_n_shot": {
+      "alias": "gpqa_main_n_shot",
+      "acc,none": 0.2857142857142857,
+      "acc_stderr,none": 0.02136722869983604,
+      "acc_norm,none": 0.2857142857142857,
+      "acc_norm_stderr,none": 0.02136722869983604
+    },
+    "gpqa_main_zeroshot": {
+      "alias": "gpqa_main_zeroshot",
+      "acc,none": 0.2767857142857143,
+      "acc_stderr,none": 0.02116174964395485,
+      "acc_norm,none": 0.2767857142857143,
+      "acc_norm_stderr,none": 0.02116174964395485
+    }
+  },
+  "group_subtasks": {
+    "gpqa_main_zeroshot": [],
+    "gpqa_extended_zeroshot": [],
+    "gpqa_diamond_zeroshot": [],
+    "gpqa_main_n_shot": [],
+    "gpqa_extended_n_shot": [],
+    "gpqa_diamond_n_shot": [],
+    "gpqa_main_generative_n_shot": [],
+    "gpqa_extended_generative_n_shot": [],
+    "gpqa_diamond_generative_n_shot": [],
+    "gpqa_main_cot_zeroshot": [],
+    "gpqa_extended_cot_zeroshot": [],
+    "gpqa_diamond_cot_zeroshot": [],
+    "gpqa_main_cot_n_shot": [],
+    "gpqa_extended_cot_n_shot": [],
+    "gpqa_diamond_cot_n_shot": []
+  },
+  "configs": {
+    "gpqa_diamond_cot_n_shot": {
+      "task": "gpqa_diamond_cot_n_shot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_diamond",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Question: {{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nLet's think step by step: ",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "description": "Here are some example questions from experts. Answer the final question yourself, following the format of the previous questions exactly.\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "(?<=The answer is )(.*)(?=.)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "multi_choice_regex",
+              "group_select": -1,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "(\\([A-Z]\\))"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_diamond_cot_zeroshot": {
+      "task": "gpqa_diamond_cot_zeroshot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_diamond",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "What is the correct answer to this question:{{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nLet's think step by step: ",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "(?<=The answer is )(.*)(?=.)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "multi_choice_regex",
+              "group_select": -1,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "(\\([A-Z]\\))"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_diamond_generative_n_shot": {
+      "task": "gpqa_diamond_generative_n_shot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_diamond",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Question: {{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "description": "Here are some example questions from experts. Answer the final question yourself, following the format of the previous questions exactly.\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>",
+          "Question:",
+          "<|im_end|>"
+        ],
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "(?<=The answer is )(.*)(?=.)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "multi_choice_regex",
+              "group_select": -1,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "(\\([A-Z]\\))"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_diamond_n_shot": {
+      "task": "gpqa_diamond_n_shot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_diamond",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        rng.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Question: {{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "description": "Here are some example questions from experts. Answer the final question yourself, following the format of the previous questions exactly.\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_diamond_zeroshot": {
+      "task": "gpqa_diamond_zeroshot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_diamond",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "What is the correct answer to this question:{{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_extended_cot_n_shot": {
+      "task": "gpqa_extended_cot_n_shot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_extended",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Question: {{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nLet's think step by step: ",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "description": "Here are some example questions from experts. Answer the final question yourself, following the format of the previous questions exactly.\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "(?<=The answer is )(.*)(?=.)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "multi_choice_regex",
+              "group_select": -1,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "(\\([A-Z]\\))"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_extended_cot_zeroshot": {
+      "task": "gpqa_extended_cot_zeroshot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_extended",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "What is the correct answer to this question:{{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nLet's think step by step: ",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "(?<=The answer is )(.*)(?=.)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "multi_choice_regex",
+              "group_select": -1,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "(\\([A-Z]\\))"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_extended_generative_n_shot": {
+      "task": "gpqa_extended_generative_n_shot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_extended",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Question: {{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "description": "Here are some example questions from experts. Answer the final question yourself, following the format of the previous questions exactly.\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>",
+          "Question:",
+          "<|im_end|>"
+        ],
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "(?<=The answer is )(.*)(?=.)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "multi_choice_regex",
+              "group_select": -1,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "(\\([A-Z]\\))"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_extended_n_shot": {
+      "task": "gpqa_extended_n_shot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_extended",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        rng.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Question: {{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "description": "Here are some example questions from experts. Answer the final question yourself, following the format of the previous questions exactly.\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_extended_zeroshot": {
+      "task": "gpqa_extended_zeroshot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_extended",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "What is the correct answer to this question:{{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_main_cot_n_shot": {
+      "task": "gpqa_main_cot_n_shot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_main",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Question: {{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nLet's think step by step: ",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "description": "Here are some example questions from experts. Answer the final question yourself, following the format of the previous questions exactly.\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "(?<=The answer is )(.*)(?=.)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "multi_choice_regex",
+              "group_select": -1,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "(\\([A-Z]\\))"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_main_cot_zeroshot": {
+      "task": "gpqa_main_cot_zeroshot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_main",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "What is the correct answer to this question:{{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nLet's think step by step: ",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>"
+        ],
+        "do_sample": false,
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "(?<=The answer is )(.*)(?=.)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "multi_choice_regex",
+              "group_select": -1,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "(\\([A-Z]\\))"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_main_generative_n_shot": {
+      "task": "gpqa_main_generative_n_shot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_main",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"choices\": [choices[0], choices[1], choices[2], choices[3]],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Question: {{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "description": "Here are some example questions from experts. Answer the final question yourself, following the format of the previous questions exactly.\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>",
+          "Question:",
+          "<|im_end|>"
+        ],
+        "temperature": 0.0
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "strict-match",
+          "filter": [
+            {
+              "function": "regex",
+              "regex_pattern": "(?<=The answer is )(.*)(?=.)"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        },
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "multi_choice_regex",
+              "group_select": -1,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "(\\([A-Z]\\))"
+            },
+            {
+              "function": "take_first"
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_main_n_shot": {
+      "task": "gpqa_main_n_shot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_main",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        rng.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "Question: {{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "description": "Here are some example questions from experts. Answer the final question yourself, following the format of the previous questions exactly.\n",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    },
+    "gpqa_main_zeroshot": {
+      "task": "gpqa_main_zeroshot",
+      "tag": "gpqa",
+      "dataset_path": "Idavidrein/gpqa",
+      "dataset_name": "gpqa_main",
+      "training_split": "train",
+      "validation_split": "train",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        choices = [\n            preprocess(doc[\"Incorrect Answer 1\"]),\n            preprocess(doc[\"Incorrect Answer 2\"]),\n            preprocess(doc[\"Incorrect Answer 3\"]),\n            preprocess(doc[\"Correct Answer\"]),\n        ]\n\n        random.shuffle(choices)\n        correct_answer_index = choices.index(preprocess(doc[\"Correct Answer\"]))\n\n        out_doc = {\n            \"choice1\": choices[0],\n            \"choice2\": choices[1],\n            \"choice3\": choices[2],\n            \"choice4\": choices[3],\n            \"answer\": f\"({chr(65 + correct_answer_index)})\",\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "What is the correct answer to this question:{{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nAnswer:",
+      "doc_to_target": "answer",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "meta-llama/Llama-3.2-1B-Instruct"
+      }
+    }
+  },
+  "versions": {
+    "gpqa_diamond_cot_n_shot": 2.0,
+    "gpqa_diamond_cot_zeroshot": 1.0,
+    "gpqa_diamond_generative_n_shot": 2.0,
+    "gpqa_diamond_n_shot": 2.0,
+    "gpqa_diamond_zeroshot": 1.0,
+    "gpqa_extended_cot_n_shot": 2.0,
+    "gpqa_extended_cot_zeroshot": 1.0,
+    "gpqa_extended_generative_n_shot": 2.0,
+    "gpqa_extended_n_shot": 2.0,
+    "gpqa_extended_zeroshot": 1.0,
+    "gpqa_main_cot_n_shot": 2.0,
+    "gpqa_main_cot_zeroshot": 1.0,
+    "gpqa_main_generative_n_shot": 2.0,
+    "gpqa_main_n_shot": 2.0,
+    "gpqa_main_zeroshot": 1.0
+  },
+  "n-shot": {
+    "gpqa_diamond_cot_n_shot": 0,
+    "gpqa_diamond_cot_zeroshot": 0,
+    "gpqa_diamond_generative_n_shot": 0,
+    "gpqa_diamond_n_shot": 0,
+    "gpqa_diamond_zeroshot": 0,
+    "gpqa_extended_cot_n_shot": 0,
+    "gpqa_extended_cot_zeroshot": 0,
+    "gpqa_extended_generative_n_shot": 0,
+    "gpqa_extended_n_shot": 0,
+    "gpqa_extended_zeroshot": 0,
+    "gpqa_main_cot_n_shot": 0,
+    "gpqa_main_cot_zeroshot": 0,
+    "gpqa_main_generative_n_shot": 0,
+    "gpqa_main_n_shot": 0,
+    "gpqa_main_zeroshot": 0
+  },
+  "higher_is_better": {
+    "gpqa_diamond_cot_n_shot": {
+      "exact_match": true
+    },
+    "gpqa_diamond_cot_zeroshot": {
+      "exact_match": true
+    },
+    "gpqa_diamond_generative_n_shot": {
+      "exact_match": true
+    },
+    "gpqa_diamond_n_shot": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "gpqa_diamond_zeroshot": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "gpqa_extended_cot_n_shot": {
+      "exact_match": true
+    },
+    "gpqa_extended_cot_zeroshot": {
+      "exact_match": true
+    },
+    "gpqa_extended_generative_n_shot": {
+      "exact_match": true
+    },
+    "gpqa_extended_n_shot": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "gpqa_extended_zeroshot": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "gpqa_main_cot_n_shot": {
+      "exact_match": true
+    },
+    "gpqa_main_cot_zeroshot": {
+      "exact_match": true
+    },
+    "gpqa_main_generative_n_shot": {
+      "exact_match": true
+    },
+    "gpqa_main_n_shot": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "gpqa_main_zeroshot": {
+      "acc": true,
+      "acc_norm": true
+    }
+  },
+  "n-samples": {
+    "gpqa_diamond_cot_n_shot": {
+      "original": 198,
+      "effective": 198
+    },
+    "gpqa_extended_cot_n_shot": {
+      "original": 546,
+      "effective": 546
+    },
+    "gpqa_main_cot_n_shot": {
+      "original": 448,
+      "effective": 448
+    },
+    "gpqa_diamond_cot_zeroshot": {
+      "original": 198,
+      "effective": 198
+    },
+    "gpqa_extended_cot_zeroshot": {
+      "original": 546,
+      "effective": 546
+    },
+    "gpqa_main_cot_zeroshot": {
+      "original": 448,
+      "effective": 448
+    },
+    "gpqa_diamond_generative_n_shot": {
+      "original": 198,
+      "effective": 198
+    },
+    "gpqa_extended_generative_n_shot": {
+      "original": 546,
+      "effective": 546
+    },
+    "gpqa_main_generative_n_shot": {
+      "original": 448,
+      "effective": 448
+    },
+    "gpqa_diamond_n_shot": {
+      "original": 198,
+      "effective": 198
+    },
+    "gpqa_extended_n_shot": {
+      "original": 546,
+      "effective": 546
+    },
+    "gpqa_main_n_shot": {
+      "original": 448,
+      "effective": 448
+    },
+    "gpqa_diamond_zeroshot": {
+      "original": 198,
+      "effective": 198
+    },
+    "gpqa_extended_zeroshot": {
+      "original": 546,
+      "effective": 546
+    },
+    "gpqa_main_zeroshot": {
+      "original": 448,
+      "effective": 448
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=meta-llama/Llama-3.2-1B-Instruct",
+    "model_num_parameters": 1235814400,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "9213176726f574b556790deb65791e0c5aa438b6",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "a9691f4a",
+  "date": 1744291828.6143618,
+  "pretty_env_info": "PyTorch version: 2.6.0+cu124\nIs debug build: False\nCUDA used to build PyTorch: 12.4\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.4 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0\nClang version: Could not collect\nCMake version: version 3.22.1\nLibc version: glibc-2.35\n\nPython version: 3.10.16 (main, Dec 11 2024, 16:24:50) [GCC 11.2.0] (64-bit runtime)\nPython platform: Linux-5.15.0-1053-nvidia-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: 12.4.131\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: \nGPU 0: NVIDIA H100 80GB HBM3\nGPU 1: NVIDIA H100 80GB HBM3\nGPU 2: NVIDIA H100 80GB HBM3\nGPU 3: NVIDIA H100 80GB HBM3\nGPU 4: NVIDIA H100 80GB HBM3\nGPU 5: NVIDIA H100 80GB HBM3\nGPU 6: NVIDIA H100 80GB HBM3\nGPU 7: NVIDIA H100 80GB HBM3\n\nNvidia driver version: 535.161.08\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:                       x86_64\nCPU op-mode(s):                     32-bit, 64-bit\nAddress sizes:                      52 bits physical, 57 bits virtual\nByte Order:                         Little Endian\nCPU(s):                             224\nOn-line CPU(s) list:                0-223\nVendor ID:                          GenuineIntel\nModel name:                         Intel(R) Xeon(R) Platinum 8480CL\nCPU family:                         6\nModel:                              143\nThread(s) per core:                 2\nCore(s) per socket:                 56\nSocket(s):                          2\nStepping:                           7\nCPU max MHz:                        3800.0000\nCPU min MHz:                        800.0000\nBogoMIPS:                           4000.00\nFlags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nL1d cache:                          5.3 MiB (112 instances)\nL1i cache:                          3.5 MiB (112 instances)\nL2 cache:                           224 MiB (112 instances)\nL3 cache:                           210 MiB (2 instances)\nNUMA node(s):                       2\nNUMA node0 CPU(s):                  0-55,112-167\nNUMA node1 CPU(s):                  56-111,168-223\nVulnerability Gather data sampling: Not affected\nVulnerability Itlb multihit:        Not affected\nVulnerability L1tf:                 Not affected\nVulnerability Mds:                  Not affected\nVulnerability Meltdown:             Not affected\nVulnerability Mmio stale data:      Not affected\nVulnerability Retbleed:             Not affected\nVulnerability Spec rstack overflow: Not affected\nVulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:           Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence\nVulnerability Srbds:                Not affected\nVulnerability Tsx async abort:      Not affected\n\nVersions of relevant libraries:\n[pip3] flashinfer-python==0.2.3+cu124torch2.5\n[pip3] numpy==2.1.3\n[pip3] nvidia-cublas-cu12==12.4.5.8\n[pip3] nvidia-cuda-cupti-cu12==12.4.127\n[pip3] nvidia-cuda-nvrtc-cu12==12.4.127\n[pip3] nvidia-cuda-runtime-cu12==12.4.127\n[pip3] nvidia-cudnn-cu12==9.1.0.70\n[pip3] nvidia-cufft-cu12==11.2.1.3\n[pip3] nvidia-curand-cu12==10.3.5.147\n[pip3] nvidia-cusolver-cu12==11.6.1.9\n[pip3] nvidia-cusparse-cu12==12.3.1.170\n[pip3] nvidia-cusparselt-cu12==0.6.2\n[pip3] nvidia-nccl-cu12==2.21.5\n[pip3] nvidia-nvjitlink-cu12==12.4.127\n[pip3] nvidia-nvtx-cu12==12.4.127\n[pip3] torch==2.6.0\n[pip3] torchao==0.10.0\n[pip3] torchaudio==2.6.0\n[pip3] torchvision==0.21.0\n[pip3] triton==3.2.0\n[conda] cuda-cudart               12.4.127             h99ab3db_0  \n[conda] cuda-cudart-dev           12.4.127             h99ab3db_0  \n[conda] cuda-cudart-dev_linux-64  12.4.127             hd681fbe_0  \n[conda] cuda-cudart-static        12.4.127             h99ab3db_0  \n[conda] cuda-cudart-static_linux-64 12.4.127             hd681fbe_0  \n[conda] cuda-cudart_linux-64      12.4.127             hd681fbe_0  \n[conda] cuda-cupti                12.4.127             h6a678d5_1  \n[conda] cuda-cupti-dev            12.4.127             h6a678d5_1  \n[conda] cuda-libraries            12.4.1               h06a4308_1  \n[conda] cuda-libraries-dev        12.4.1               h06a4308_1  \n[conda] cuda-nvrtc                12.4.127             h99ab3db_1  \n[conda] cuda-nvrtc-dev            12.4.127             h99ab3db_1  \n[conda] cuda-nvtx                 12.4.127             h6a678d5_1  \n[conda] cuda-opencl               12.4.127             h6a678d5_0  \n[conda] cuda-opencl-dev           12.4.127             h6a678d5_0  \n[conda] flashinfer-python         0.2.3+cu124torch2.5          pypi_0    pypi\n[conda] libcublas                 12.4.5.8             h99ab3db_1  \n[conda] libcublas-dev             12.4.5.8             h99ab3db_1  \n[conda] libcufft                  11.2.1.3             h99ab3db_1  \n[conda] libcufft-dev              11.2.1.3             h99ab3db_1  \n[conda] libcurand                 10.3.5.147           h99ab3db_1  \n[conda] libcurand-dev             10.3.5.147           h99ab3db_1  \n[conda] libcusolver               11.6.1.9             h99ab3db_1  \n[conda] libcusolver-dev           11.6.1.9             h99ab3db_1  \n[conda] libcusparse               12.3.1.170           h99ab3db_1  \n[conda] libcusparse-dev           12.3.1.170           h99ab3db_1  \n[conda] libnvjitlink              12.4.127             h99ab3db_1  \n[conda] libnvjitlink-dev          12.4.127             h99ab3db_1  \n[conda] numpy                     2.1.3                    pypi_0    pypi\n[conda] nvidia-cublas-cu12        12.4.5.8                 pypi_0    pypi\n[conda] nvidia-cuda-cupti-cu12    12.4.127                 pypi_0    pypi\n[conda] nvidia-cuda-nvrtc-cu12    12.4.127                 pypi_0    pypi\n[conda] nvidia-cuda-runtime-cu12  12.4.127                 pypi_0    pypi\n[conda] nvidia-cudnn-cu12         9.1.0.70                 pypi_0    pypi\n[conda] nvidia-cufft-cu12         11.2.1.3                 pypi_0    pypi\n[conda] nvidia-curand-cu12        10.3.5.147               pypi_0    pypi\n[conda] nvidia-cusolver-cu12      11.6.1.9                 pypi_0    pypi\n[conda] nvidia-cusparse-cu12      12.3.1.170               pypi_0    pypi\n[conda] nvidia-cusparselt-cu12    0.6.2                    pypi_0    pypi\n[conda] nvidia-nccl-cu12          2.21.5                   pypi_0    pypi\n[conda] nvidia-nvjitlink-cu12     12.4.127                 pypi_0    pypi\n[conda] nvidia-nvtx-cu12          12.4.127                 pypi_0    pypi\n[conda] torch                     2.6.0                    pypi_0    pypi\n[conda] torchao                   0.10.0                   pypi_0    pypi\n[conda] torchaudio                2.6.0                    pypi_0    pypi\n[conda] torchvision               0.21.0                   pypi_0    pypi\n[conda] triton                    3.2.0                    pypi_0    pypi",
+  "transformers_version": "4.51.1",
+  "lm_eval_version": "0.4.8",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|eot_id|>",
+    "128009"
+  ],
+  "tokenizer_eos_token": [
+    "<|eot_id|>",
+    "128009"
+  ],
+  "tokenizer_bos_token": [
+    "<|begin_of_text|>",
+    "128000"
+  ],
+  "eot_token_id": 128009,
+  "max_length": 131072,
+  "task_hashes": {
+    "gpqa_diamond_cot_n_shot": "0d2baff110bab5b64a07185ae768d6b604bcb26e3a3b374784c197cd5a215d54",
+    "gpqa_extended_cot_n_shot": "1928523dc019ebf56a502e2392c0efcbeae81760d238a9d8f2cb29662899d823",
+    "gpqa_main_cot_n_shot": "0e411e9fdb6451abfd81abe045e61284034c91da08ff6866a7541a3500a2f163",
+    "gpqa_diamond_cot_zeroshot": "c20ef60a61bd5e9f9aa47786fe4376de4526acba9e1a046f8f0791e4e271b418",
+    "gpqa_extended_cot_zeroshot": "4601e7f19e457ed8c5cccfaf5381e5cfcf03c0ea76aac3a8b5e155d149eb832b",
+    "gpqa_main_cot_zeroshot": "e8a80f2a9082623e6f4f8d110df88e4e31989c28caf7c14db410c8cdf52ec18b",
+    "gpqa_diamond_generative_n_shot": "71985335b9621cf9f1c9f16e7872d94d7a01ab88347a63987a7c756daa4f9f77",
+    "gpqa_extended_generative_n_shot": "4db86f231b098d9c154db4155ac6df2d4aef4e5d7923eef074910cfa3f90a6d1",
+    "gpqa_main_generative_n_shot": "a5d38eb4be081ddbd71e4fdcb7538ac0ad8f892f16eef4b932fe0b18a49592c4",
+    "gpqa_diamond_n_shot": "05ff85eeca385f74ecd7bcdfe3ab6429da1aba7673c004329308b2731cb9f876",
+    "gpqa_extended_n_shot": "a9e373cd58f02060f13d7635ed12d5c304a579a5669ea4af8910229b28194328",
+    "gpqa_main_n_shot": "e86e66a7071cb61ed1ae51a137ef72670f722c66ff22bdbec76d8a535610ff5c",
+    "gpqa_diamond_zeroshot": "6f205e7bb901ff9757757edc81475685fb21825d24178b075bd2798dd9c466a4",
+    "gpqa_extended_zeroshot": "5a33251e366f8f58bfd8fce9fc90407fefd374c0bae46b93dc48244aea65316c",
+    "gpqa_main_zeroshot": "230e6146bc39e52b02d49fe496ee795842cbc56fd2f78dc8bcc6efd040617026"
+  },
+  "model_source": "hf",
+  "model_name": "meta-llama/Llama-3.2-1B-Instruct",
+  "model_name_sanitized": "meta-llama__Llama-3.2-1B-Instruct",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 6797535.431805014,
+  "end_time": 6803117.340664251,
+  "total_evaluation_time_seconds": "5581.908859237097"
+}

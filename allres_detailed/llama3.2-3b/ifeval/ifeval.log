@@ -1,0 +1,27 @@
+INFO 04-10 07:05:41 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['ifeval']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'meta-llama/Llama-3.2-3B-Instruct'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.62s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.04it/s]
+INFO:lm_eval.evaluator:ifeval: Using gen_kwargs: {'until': [], 'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 1280}
+INFO:lm_eval.evaluator:num_fewshot has been set to 0 for ifeval in its config. Manual configuration will be ignored.
+INFO:lm_eval.api.task:Building contexts for ifeval on rank 0...
+  0%|          | 0/541 [00:00<?, ?it/s]100%|██████████| 541/541 [00:00<00:00, 138504.45it/s]
+INFO:lm_eval.evaluator:Running generate_until requests
+Running generate_until requests:   0%|          | 0/541 [00:00<?, ?it/s]/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Running generate_until requests:   0%|          | 1/541 [02:19<20:57:28, 139.72s/it]Running generate_until requests:  24%|██▍       | 129/541 [03:57<10:27,  1.52s/it]  Running generate_until requests:  48%|████▊     | 257/541 [05:34<05:04,  1.07s/it]Running generate_until requests:  71%|███████   | 385/541 [07:09<02:24,  1.08it/s]Running generate_until requests:  95%|█████████▍| 513/541 [07:41<00:18,  1.53it/s]Running generate_until requests: 100%|██████████| 541/541 [07:41<00:00,  1.17it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: ifeval
+hf (pretrained=meta-llama/Llama-3.2-3B-Instruct), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|Tasks |Version|Filter|n-shot|        Metric         |   |Value |   |Stderr|
+|------|------:|------|-----:|-----------------------|---|-----:|---|------|
+|ifeval|      4|none  |     0|inst_level_loose_acc   |↑  |0.6799|±  |   N/A|
+|      |       |none  |     0|inst_level_strict_acc  |↑  |0.6223|±  |   N/A|
+|      |       |none  |     0|prompt_level_loose_acc |↑  |0.5508|±  |0.0214|
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.4750|±  |0.0215|
+

@@ -1,0 +1,19 @@
+INFO 04-10 06:28:08 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['openbookqa']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'meta-llama/Llama-3.2-1B-Instruct'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of openbookqa from None to 0
+INFO:lm_eval.api.task:Building contexts for openbookqa on rank 0...
+  0%|          | 0/500 [00:00<?, ?it/s] 79%|███████▉  | 394/500 [00:00<00:00, 3932.20it/s]100%|██████████| 500/500 [00:00<00:00, 3941.47it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/2000 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/2000 [00:00<19:30,  1.71it/s]Running loglikelihood requests:  23%|██▎       | 463/2000 [00:00<00:01, 872.86it/s]Running loglikelihood requests:  47%|████▋     | 943/2000 [00:00<00:00, 1703.01it/s]Running loglikelihood requests:  76%|███████▌  | 1517/2000 [00:00<00:00, 2640.58it/s]Running loglikelihood requests:  98%|█████████▊| 1950/2000 [00:01<00:00, 2686.84it/s]Running loglikelihood requests: 100%|██████████| 2000/2000 [00:01<00:00, 1874.05it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: openbookqa
+hf (pretrained=meta-llama/Llama-3.2-1B-Instruct), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|  Tasks   |Version|Filter|n-shot| Metric |   |Value|   |Stderr|
+|----------|------:|------|-----:|--------|---|----:|---|-----:|
+|openbookqa|      1|none  |     0|acc     |↑  |0.238|±  |0.0191|
+|          |       |none  |     0|acc_norm|↑  |0.342|±  |0.0212|
+

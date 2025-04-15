@@ -1,0 +1,19 @@
+INFO 04-10 07:19:37 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['winogrande']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'meta-llama/Llama-3.2-3B-Instruct'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.03it/s]
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of winogrande from None to 0
+INFO:lm_eval.api.task:Building contexts for winogrande on rank 0...
+  0%|          | 0/1267 [00:00<?, ?it/s]100%|██████████| 1267/1267 [00:00<00:00, 129867.62it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/2534 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/2534 [00:00<25:46,  1.64it/s]Running loglikelihood requests:  10%|█         | 257/2534 [00:00<00:05, 439.37it/s]Running loglikelihood requests:  20%|██        | 513/2534 [00:00<00:02, 789.20it/s]Running loglikelihood requests:  30%|███       | 769/2534 [00:01<00:01, 1078.65it/s]Running loglikelihood requests:  40%|████      | 1025/2534 [00:01<00:01, 1313.32it/s]Running loglikelihood requests:  51%|█████     | 1281/2534 [00:01<00:00, 1504.47it/s]Running loglikelihood requests:  61%|██████    | 1537/2534 [00:01<00:00, 1667.47it/s]Running loglikelihood requests:  71%|███████   | 1793/2534 [00:01<00:00, 1808.50it/s]Running loglikelihood requests:  81%|████████  | 2049/2534 [00:01<00:00, 1918.48it/s]Running loglikelihood requests:  91%|█████████ | 2305/2534 [00:01<00:00, 2014.71it/s]Running loglikelihood requests: 100%|██████████| 2534/2534 [00:01<00:00, 1388.92it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: winogrande
+hf (pretrained=meta-llama/Llama-3.2-3B-Instruct), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|  Tasks   |Version|Filter|n-shot|Metric|   |Value |   |Stderr|
+|----------|------:|------|-----:|------|---|-----:|---|-----:|
+|winogrande|      1|none  |     0|acc   |↑  |0.6764|±  |0.0131|
+

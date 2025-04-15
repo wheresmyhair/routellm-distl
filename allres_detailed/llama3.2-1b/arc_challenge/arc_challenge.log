@@ -1,0 +1,19 @@
+INFO 04-10 06:25:21 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['arc_challenge']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'meta-llama/Llama-3.2-1B-Instruct'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of arc_challenge from None to 0
+INFO:lm_eval.api.task:Building contexts for arc_challenge on rank 0...
+  0%|          | 0/1172 [00:00<?, ?it/s] 18%|█▊        | 214/1172 [00:00<00:00, 2133.77it/s] 37%|███▋      | 431/1172 [00:00<00:00, 2150.22it/s] 55%|█████▌    | 647/1172 [00:00<00:00, 2153.31it/s] 74%|███████▍  | 865/1172 [00:00<00:00, 2163.52it/s] 92%|█████████▏| 1083/1172 [00:00<00:00, 2166.83it/s]100%|██████████| 1172/1172 [00:00<00:00, 2162.20it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/4687 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/4687 [00:00<48:11,  1.62it/s]Running loglikelihood requests:   6%|▌         | 271/4687 [00:00<00:09, 457.31it/s]Running loglikelihood requests:  11%|█▏        | 534/4687 [00:00<00:05, 823.56it/s]Running loglikelihood requests:  17%|█▋        | 806/4687 [00:01<00:03, 1154.22it/s]Running loglikelihood requests:  23%|██▎       | 1080/4687 [00:01<00:02, 1444.64it/s]Running loglikelihood requests:  29%|██▊       | 1347/4687 [00:01<00:01, 1672.58it/s]Running loglikelihood requests:  35%|███▍      | 1628/4687 [00:01<00:01, 1913.15it/s]Running loglikelihood requests:  40%|████      | 1896/4687 [00:01<00:01, 2102.13it/s]Running loglikelihood requests:  47%|████▋     | 2213/4687 [00:01<00:01, 2385.51it/s]Running loglikelihood requests:  55%|█████▌    | 2594/4687 [00:01<00:00, 2776.76it/s]Running loglikelihood requests:  62%|██████▏   | 2894/4687 [00:01<00:00, 2693.28it/s]Running loglikelihood requests:  70%|██████▉   | 3274/4687 [00:01<00:00, 2842.50it/s]Running loglikelihood requests:  79%|███████▊  | 3687/4687 [00:02<00:00, 3070.84it/s]Running loglikelihood requests:  88%|████████▊ | 4112/4687 [00:02<00:00, 3295.33it/s]Running loglikelihood requests:  98%|█████████▊| 4571/4687 [00:02<00:00, 3648.57it/s]Running loglikelihood requests: 100%|██████████| 4687/4687 [00:02<00:00, 2079.55it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: arc_challenge
+hf (pretrained=meta-llama/Llama-3.2-1B-Instruct), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|    Tasks    |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|arc_challenge|      1|none  |     0|acc     |↑  |0.3567|±  |0.0140|
+|             |       |none  |     0|acc_norm|↑  |0.3780|±  |0.0142|
+

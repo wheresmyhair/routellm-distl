@@ -1,0 +1,19 @@
+INFO 04-10 06:28:31 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['piqa']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'meta-llama/Llama-3.2-1B-Instruct'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of piqa from None to 0
+INFO:lm_eval.api.task:Building contexts for piqa on rank 0...
+  0%|          | 0/1838 [00:00<?, ?it/s] 11%|█         | 204/1838 [00:00<00:00, 2039.75it/s] 22%|██▏       | 408/1838 [00:00<00:00, 2020.02it/s] 33%|███▎      | 613/1838 [00:00<00:00, 2030.85it/s] 45%|████▍     | 819/1838 [00:00<00:00, 2041.95it/s] 56%|█████▌    | 1027/1838 [00:00<00:00, 2052.94it/s] 67%|██████▋   | 1233/1838 [00:00<00:00, 2051.53it/s] 78%|███████▊  | 1439/1838 [00:00<00:00, 2045.99it/s] 89%|████████▉ | 1644/1838 [00:00<00:00, 2044.83it/s]100%|██████████| 1838/1838 [00:00<00:00, 2042.48it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/3676 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/3676 [00:00<57:04,  1.07it/s]Running loglikelihood requests:   5%|▍         | 176/3676 [00:01<00:14, 233.52it/s]Running loglikelihood requests:  11%|█         | 386/3676 [00:01<00:06, 492.63it/s]Running loglikelihood requests:  17%|█▋        | 642/3676 [00:01<00:03, 816.47it/s]Running loglikelihood requests:  24%|██▍       | 899/3676 [00:01<00:02, 1124.65it/s]Running loglikelihood requests:  31%|███▏      | 1155/3676 [00:01<00:01, 1414.48it/s]Running loglikelihood requests:  39%|███▉      | 1446/3676 [00:01<00:01, 1758.67it/s]Running loglikelihood requests:  49%|████▉     | 1796/3676 [00:01<00:00, 2041.23it/s]Running loglikelihood requests:  59%|█████▉    | 2181/3676 [00:01<00:00, 2352.62it/s]Running loglikelihood requests:  70%|██████▉   | 2570/3676 [00:01<00:00, 2637.99it/s]Running loglikelihood requests:  80%|████████  | 2957/3676 [00:02<00:00, 2912.43it/s]Running loglikelihood requests:  91%|█████████▏| 3363/3676 [00:02<00:00, 3216.59it/s]Running loglikelihood requests: 100%|██████████| 3676/3676 [00:02<00:00, 1604.28it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: piqa
+hf (pretrained=meta-llama/Llama-3.2-1B-Instruct), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|Tasks|Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-----|------:|------|-----:|--------|---|-----:|---|-----:|
+|piqa |      1|none  |     0|acc     |↑  |0.7454|±  |0.0102|
+|     |       |none  |     0|acc_norm|↑  |0.7454|±  |0.0102|
+

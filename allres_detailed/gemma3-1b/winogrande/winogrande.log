@@ -1,0 +1,19 @@
+INFO 04-10 07:32:34 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['winogrande']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'google/gemma-3-1b-it'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+INFO:lm_eval.models.huggingface:Model type is 'gemma3_text', part of the Gemma family--a BOS token will be used as Gemma underperforms without it.
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of winogrande from None to 0
+INFO:lm_eval.api.task:Building contexts for winogrande on rank 0...
+  0%|          | 0/1267 [00:00<?, ?it/s]100%|██████████| 1267/1267 [00:00<00:00, 129097.83it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/2534 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/2534 [00:00<26:47,  1.58it/s]Running loglikelihood requests:  10%|█         | 257/2534 [00:00<00:05, 441.36it/s]Running loglikelihood requests:  20%|██        | 513/2534 [00:00<00:02, 819.92it/s]Running loglikelihood requests:  30%|███       | 769/2534 [00:01<00:01, 1143.13it/s]Running loglikelihood requests:  40%|████      | 1025/2534 [00:01<00:01, 1414.48it/s]Running loglikelihood requests:  51%|█████     | 1281/2534 [00:01<00:00, 1627.69it/s]Running loglikelihood requests:  61%|██████    | 1537/2534 [00:01<00:00, 1805.36it/s]Running loglikelihood requests:  71%|███████   | 1793/2534 [00:01<00:00, 1935.03it/s]Running loglikelihood requests:  81%|████████  | 2049/2534 [00:01<00:00, 2011.82it/s]Running loglikelihood requests:  91%|█████████ | 2305/2534 [00:01<00:00, 2084.38it/s]Running loglikelihood requests: 100%|█████████▉| 2526/2534 [00:01<00:00, 1673.64it/s]Running loglikelihood requests: 100%|██████████| 2534/2534 [00:01<00:00, 1333.90it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: winogrande
+hf (pretrained=google/gemma-3-1b-it), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|  Tasks   |Version|Filter|n-shot|Metric|   |Value|   |Stderr|
+|----------|------:|------|-----:|------|---|----:|---|-----:|
+|winogrande|      1|none  |     0|acc   |↑  |0.588|±  |0.0138|
+

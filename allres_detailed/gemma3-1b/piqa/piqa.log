@@ -1,0 +1,20 @@
+INFO 04-10 07:31:16 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['piqa']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'google/gemma-3-1b-it'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+INFO:lm_eval.models.huggingface:Model type is 'gemma3_text', part of the Gemma family--a BOS token will be used as Gemma underperforms without it.
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of piqa from None to 0
+INFO:lm_eval.api.task:Building contexts for piqa on rank 0...
+  0%|          | 0/1838 [00:00<?, ?it/s] 11%|█         | 200/1838 [00:00<00:00, 1999.35it/s] 22%|██▏       | 400/1838 [00:00<00:00, 1997.99it/s] 33%|███▎      | 603/1838 [00:00<00:00, 2009.86it/s] 44%|████▍     | 810/1838 [00:00<00:00, 2033.47it/s] 55%|█████▌    | 1014/1838 [00:00<00:00, 2009.62it/s] 66%|██████▋   | 1220/1838 [00:00<00:00, 2023.84it/s] 78%|███████▊  | 1426/1838 [00:00<00:00, 2032.61it/s] 89%|████████▉ | 1632/1838 [00:00<00:00, 2041.08it/s]100%|█████████▉| 1837/1838 [00:00<00:00, 2042.70it/s]100%|██████████| 1838/1838 [00:00<00:00, 2028.99it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/3676 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/3676 [00:01<1:04:40,  1.06s/it]Running loglikelihood requests:   4%|▎         | 129/3676 [00:01<00:24, 143.19it/s]Running loglikelihood requests:   7%|▋         | 257/3676 [00:01<00:11, 285.64it/s]Running loglikelihood requests:  11%|█         | 386/3676 [00:01<00:07, 436.31it/s]Running loglikelihood requests:  14%|█▍        | 514/3676 [00:01<00:05, 584.07it/s]Running loglikelihood requests:  19%|█▉        | 695/3676 [00:01<00:03, 834.34it/s]Running loglikelihood requests:  24%|██▍       | 899/3676 [00:01<00:02, 956.66it/s]Running loglikelihood requests:  31%|███▏      | 1155/3676 [00:01<00:02, 1155.45it/s]Running loglikelihood requests:  38%|███▊      | 1411/3676 [00:02<00:01, 1325.51it/s]Running loglikelihood requests:  45%|████▌     | 1669/3676 [00:02<00:01, 1467.61it/s]Running loglikelihood requests:  52%|█████▏    | 1926/3676 [00:02<00:01, 1597.11it/s]Running loglikelihood requests:  59%|█████▉    | 2183/3676 [00:02<00:00, 1712.24it/s]Running loglikelihood requests:  66%|██████▋   | 2440/3676 [00:02<00:00, 1825.04it/s]Running loglikelihood requests:  73%|███████▎  | 2701/3676 [00:02<00:00, 1930.18it/s]Running loglikelihood requests:  81%|████████  | 2962/3676 [00:02<00:00, 2018.37it/s]Running loglikelihood requests:  88%|████████▊ | 3218/3676 [00:03<00:00, 2034.90it/s]Running loglikelihood requests:  95%|█████████▍| 3478/3676 [00:03<00:00, 2121.65it/s]Running loglikelihood requests: 100%|██████████| 3676/3676 [00:03<00:00, 1151.39it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: piqa
+hf (pretrained=google/gemma-3-1b-it), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|Tasks|Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-----|------:|------|-----:|--------|---|-----:|---|-----:|
+|piqa |      1|none  |     0|acc     |↑  |0.7171|±  |0.0105|
+|     |       |none  |     0|acc_norm|↑  |0.7187|±  |0.0105|
+

@@ -1,0 +1,185 @@
+INFO 04-10 06:27:21 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['bbh']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'google/gemma-3-1b-it'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+INFO:lm_eval.models.huggingface:Model type is 'gemma3_text', part of the Gemma family--a BOS token will be used as Gemma underperforms without it.
+INFO:lm_eval.evaluator:bbh_cot_fewshot_boolean_expressions: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_boolean_expressions from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_causal_judgement: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_causal_judgement from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_date_understanding: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_date_understanding from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_disambiguation_qa: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_disambiguation_qa from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_dyck_languages: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_dyck_languages from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_formal_fallacies: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_formal_fallacies from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_geometric_shapes: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_geometric_shapes from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_hyperbaton: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_hyperbaton from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_logical_deduction_five_objects: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_logical_deduction_five_objects from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_logical_deduction_seven_objects: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_logical_deduction_seven_objects from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_logical_deduction_three_objects: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_logical_deduction_three_objects from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_movie_recommendation: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_movie_recommendation from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_multistep_arithmetic_two: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_multistep_arithmetic_two from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_navigate: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_navigate from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_object_counting: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_object_counting from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_penguins_in_a_table: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_penguins_in_a_table from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_reasoning_about_colored_objects: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_reasoning_about_colored_objects from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_ruin_names: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_ruin_names from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_salient_translation_error_detection: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_salient_translation_error_detection from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_snarks: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_snarks from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_sports_understanding: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_sports_understanding from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_temporal_sequences: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_temporal_sequences from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_tracking_shuffled_objects_five_objects: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_tracking_shuffled_objects_five_objects from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_tracking_shuffled_objects_seven_objects: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_tracking_shuffled_objects_seven_objects from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_tracking_shuffled_objects_three_objects: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_tracking_shuffled_objects_three_objects from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_web_of_lies: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_web_of_lies from 3 to 0
+INFO:lm_eval.evaluator:bbh_cot_fewshot_word_sorting: Using gen_kwargs: {'max_gen_toks': 1024, 'until': ['</s>', 'Q', '\n\n'], 'do_sample': False, 'temperature': 0.0}
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of bbh_cot_fewshot_word_sorting from 3 to 0
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_boolean_expressions on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2611.33it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_causal_judgement on rank 0...
+  0%|          | 0/187 [00:00<?, ?it/s]100%|██████████| 187/187 [00:00<00:00, 2643.96it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_date_understanding on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2737.74it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_disambiguation_qa on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2608.93it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_dyck_languages on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2748.06it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_formal_fallacies on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2607.86it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_geometric_shapes on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2745.73it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_hyperbaton on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2685.44it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_logical_deduction_five_objects on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2695.58it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_logical_deduction_seven_objects on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2706.49it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_logical_deduction_three_objects on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2651.11it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_movie_recommendation on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2691.08it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_multistep_arithmetic_two on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2744.57it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_navigate on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2613.40it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_object_counting on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2636.05it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_penguins_in_a_table on rank 0...
+  0%|          | 0/146 [00:00<?, ?it/s]100%|██████████| 146/146 [00:00<00:00, 2626.08it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_reasoning_about_colored_objects on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2702.73it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_ruin_names on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2739.21it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_salient_translation_error_detection on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2722.59it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_snarks on rank 0...
+  0%|          | 0/178 [00:00<?, ?it/s]100%|██████████| 178/178 [00:00<00:00, 2535.65it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_sports_understanding on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2703.44it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_temporal_sequences on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2512.43it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_tracking_shuffled_objects_five_objects on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2658.22it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_tracking_shuffled_objects_seven_objects on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2641.97it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_tracking_shuffled_objects_three_objects on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2654.54it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_web_of_lies on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2726.82it/s]
+INFO:lm_eval.api.task:Building contexts for bbh_cot_fewshot_word_sorting on rank 0...
+  0%|          | 0/250 [00:00<?, ?it/s]100%|██████████| 250/250 [00:00<00:00, 2740.41it/s]
+INFO:lm_eval.evaluator:Running generate_until requests
+Running generate_until requests:   0%|          | 0/6511 [00:00<?, ?it/s]/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.95` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:653: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `64` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Running generate_until requests:   0%|          | 1/6511 [00:44<79:42:51, 44.08s/it]Running generate_until requests:   2%|▏         | 129/6511 [01:26<1:00:11,  1.77it/s]Running generate_until requests:   4%|▍         | 257/6511 [02:08<44:25,  2.35it/s]  Running generate_until requests:   6%|▌         | 385/6511 [02:49<38:55,  2.62it/s]Running generate_until requests:   8%|▊         | 513/6511 [03:31<35:58,  2.78it/s]Running generate_until requests:  10%|▉         | 641/6511 [04:13<34:03,  2.87it/s]Running generate_until requests:  12%|█▏        | 769/6511 [04:55<32:37,  2.93it/s]Running generate_until requests:  14%|█▍        | 897/6511 [05:37<31:28,  2.97it/s]Running generate_until requests:  16%|█▌        | 1025/6511 [06:19<30:29,  3.00it/s]Running generate_until requests:  18%|█▊        | 1153/6511 [07:01<29:34,  3.02it/s]Running generate_until requests:  20%|█▉        | 1281/6511 [07:42<28:45,  3.03it/s]Running generate_until requests:  22%|██▏       | 1409/6511 [08:24<27:57,  3.04it/s]Running generate_until requests:  24%|██▎       | 1537/6511 [09:06<27:12,  3.05it/s]Running generate_until requests:  26%|██▌       | 1665/6511 [09:48<26:28,  3.05it/s]Running generate_until requests:  28%|██▊       | 1793/6511 [10:30<25:44,  3.05it/s]Running generate_until requests:  30%|██▉       | 1921/6511 [11:11<25:01,  3.06it/s]Running generate_until requests:  31%|███▏      | 2049/6511 [11:53<24:18,  3.06it/s]Running generate_until requests:  33%|███▎      | 2177/6511 [12:35<23:35,  3.06it/s]Running generate_until requests:  35%|███▌      | 2305/6511 [13:17<22:52,  3.06it/s]Running generate_until requests:  37%|███▋      | 2433/6511 [13:58<22:10,  3.07it/s]Running generate_until requests:  39%|███▉      | 2561/6511 [14:40<21:28,  3.07it/s]Running generate_until requests:  41%|████▏     | 2689/6511 [15:22<20:46,  3.07it/s]Running generate_until requests:  43%|████▎     | 2817/6511 [16:04<20:04,  3.07it/s]Running generate_until requests:  45%|████▌     | 2945/6511 [16:45<19:22,  3.07it/s]Running generate_until requests:  47%|████▋     | 3073/6511 [17:27<18:41,  3.07it/s]Running generate_until requests:  49%|████▉     | 3201/6511 [18:09<17:59,  3.07it/s]Running generate_until requests:  51%|█████     | 3329/6511 [18:51<17:17,  3.07it/s]Running generate_until requests:  53%|█████▎    | 3457/6511 [19:32<16:35,  3.07it/s]Running generate_until requests:  55%|█████▌    | 3585/6511 [20:14<15:53,  3.07it/s]Running generate_until requests:  57%|█████▋    | 3713/6511 [20:55<15:10,  3.07it/s]Running generate_until requests:  59%|█████▉    | 3841/6511 [21:37<14:29,  3.07it/s]Running generate_until requests:  61%|██████    | 3969/6511 [22:19<13:47,  3.07it/s]Running generate_until requests:  63%|██████▎   | 4097/6511 [23:00<13:05,  3.07it/s]Running generate_until requests:  65%|██████▍   | 4225/6511 [23:42<12:23,  3.07it/s]Running generate_until requests:  67%|██████▋   | 4353/6511 [24:24<11:42,  3.07it/s]Running generate_until requests:  69%|██████▉   | 4481/6511 [25:05<11:00,  3.07it/s]Running generate_until requests:  71%|███████   | 4609/6511 [25:47<10:18,  3.07it/s]Running generate_until requests:  73%|███████▎  | 4737/6511 [26:29<09:36,  3.08it/s]Running generate_until requests:  75%|███████▍  | 4865/6511 [27:10<08:55,  3.08it/s]Running generate_until requests:  77%|███████▋  | 4993/6511 [27:52<08:13,  3.08it/s]Running generate_until requests:  79%|███████▊  | 5121/6511 [28:33<07:31,  3.08it/s]Running generate_until requests:  81%|████████  | 5249/6511 [29:15<06:50,  3.08it/s]Running generate_until requests:  83%|████████▎ | 5377/6511 [29:56<06:08,  3.08it/s]Running generate_until requests:  85%|████████▍ | 5505/6511 [30:38<05:26,  3.08it/s]Running generate_until requests:  87%|████████▋ | 5633/6511 [31:19<04:44,  3.08it/s]Running generate_until requests:  88%|████████▊ | 5761/6511 [32:01<04:03,  3.08it/s]Running generate_until requests:  90%|█████████ | 5889/6511 [32:42<03:21,  3.09it/s]Running generate_until requests:  92%|█████████▏| 6017/6511 [33:24<02:39,  3.09it/s]Running generate_until requests:  94%|█████████▍| 6145/6511 [34:05<01:58,  3.09it/s]Running generate_until requests:  96%|█████████▋| 6273/6511 [34:46<01:17,  3.09it/s]Running generate_until requests:  98%|█████████▊| 6401/6511 [35:23<00:34,  3.21it/s]Running generate_until requests: 100%|██████████| 6511/6511 [35:23<00:00,  3.07it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_boolean_expressions
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_causal_judgement
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_date_understanding
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_disambiguation_qa
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_dyck_languages
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_formal_fallacies
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_geometric_shapes
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_hyperbaton
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_logical_deduction_five_objects
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_logical_deduction_seven_objects
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_logical_deduction_three_objects
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_movie_recommendation
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_multistep_arithmetic_two
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_navigate
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_object_counting
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_penguins_in_a_table
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_reasoning_about_colored_objects
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_ruin_names
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_salient_translation_error_detection
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_snarks
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_sports_understanding
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_temporal_sequences
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_tracking_shuffled_objects_five_objects
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_tracking_shuffled_objects_seven_objects
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_tracking_shuffled_objects_three_objects
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_web_of_lies
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: bbh_cot_fewshot_word_sorting
+hf (pretrained=google/gemma-3-1b-it), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|                          Tasks                           |Version|  Filter  |n-shot|  Metric   |   |Value |   |Stderr|
+|----------------------------------------------------------|------:|----------|-----:|-----------|---|-----:|---|-----:|
+|bbh                                                       |      3|get-answer|      |exact_match|↑  |0.0657|±  |0.0028|
+| - bbh_cot_fewshot_boolean_expressions                    |      3|get-answer|     0|exact_match|↑  |0.0000|±  |0.0000|
+| - bbh_cot_fewshot_causal_judgement                       |      3|get-answer|     0|exact_match|↑  |0.0000|±  |0.0000|
+| - bbh_cot_fewshot_date_understanding                     |      3|get-answer|     0|exact_match|↑  |0.0000|±  |0.0000|
+| - bbh_cot_fewshot_disambiguation_qa                      |      3|get-answer|     0|exact_match|↑  |0.1440|±  |0.0222|
+| - bbh_cot_fewshot_dyck_languages                         |      3|get-answer|     0|exact_match|↑  |0.0000|±  |0.0000|
+| - bbh_cot_fewshot_formal_fallacies                       |      3|get-answer|     0|exact_match|↑  |0.0080|±  |0.0056|
+| - bbh_cot_fewshot_geometric_shapes                       |      3|get-answer|     0|exact_match|↑  |0.0120|±  |0.0069|
+| - bbh_cot_fewshot_hyperbaton                             |      3|get-answer|     0|exact_match|↑  |0.0720|±  |0.0164|
+| - bbh_cot_fewshot_logical_deduction_five_objects         |      3|get-answer|     0|exact_match|↑  |0.0560|±  |0.0146|
+| - bbh_cot_fewshot_logical_deduction_seven_objects        |      3|get-answer|     0|exact_match|↑  |0.0280|±  |0.0105|
+| - bbh_cot_fewshot_logical_deduction_three_objects        |      3|get-answer|     0|exact_match|↑  |0.0920|±  |0.0183|
+| - bbh_cot_fewshot_movie_recommendation                   |      3|get-answer|     0|exact_match|↑  |0.0680|±  |0.0160|
+| - bbh_cot_fewshot_multistep_arithmetic_two               |      3|get-answer|     0|exact_match|↑  |0.3920|±  |0.0309|
+| - bbh_cot_fewshot_navigate                               |      3|get-answer|     0|exact_match|↑  |0.3720|±  |0.0306|
+| - bbh_cot_fewshot_object_counting                        |      3|get-answer|     0|exact_match|↑  |0.0000|±  |0.0000|
+| - bbh_cot_fewshot_penguins_in_a_table                    |      3|get-answer|     0|exact_match|↑  |0.0548|±  |0.0189|
+| - bbh_cot_fewshot_reasoning_about_colored_objects        |      3|get-answer|     0|exact_match|↑  |0.0680|±  |0.0160|
+| - bbh_cot_fewshot_ruin_names                             |      3|get-answer|     0|exact_match|↑  |0.0080|±  |0.0056|
+| - bbh_cot_fewshot_salient_translation_error_detection    |      3|get-answer|     0|exact_match|↑  |0.0160|±  |0.0080|
+| - bbh_cot_fewshot_snarks                                 |      3|get-answer|     0|exact_match|↑  |0.2135|±  |0.0308|
+| - bbh_cot_fewshot_sports_understanding                   |      3|get-answer|     0|exact_match|↑  |0.0000|±  |0.0000|
+| - bbh_cot_fewshot_temporal_sequences                     |      3|get-answer|     0|exact_match|↑  |0.0040|±  |0.0040|
+| - bbh_cot_fewshot_tracking_shuffled_objects_five_objects |      3|get-answer|     0|exact_match|↑  |0.0480|±  |0.0135|
+| - bbh_cot_fewshot_tracking_shuffled_objects_seven_objects|      3|get-answer|     0|exact_match|↑  |0.0120|±  |0.0069|
+| - bbh_cot_fewshot_tracking_shuffled_objects_three_objects|      3|get-answer|     0|exact_match|↑  |0.1280|±  |0.0212|
+| - bbh_cot_fewshot_web_of_lies                            |      3|get-answer|     0|exact_match|↑  |0.0000|±  |0.0000|
+| - bbh_cot_fewshot_word_sorting                           |      3|get-answer|     0|exact_match|↑  |0.0000|±  |0.0000|
+
+|Groups|Version|  Filter  |n-shot|  Metric   |   |Value |   |Stderr|
+|------|------:|----------|------|-----------|---|-----:|---|-----:|
+|bbh   |      3|get-answer|      |exact_match|↑  |0.0657|±  |0.0028|
+

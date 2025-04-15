@@ -1,0 +1,66 @@
+INFO 04-10 08:25:05 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['wikitext']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'google/gemma-3-4b-it'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.84s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.32s/it]
+INFO:lm_eval.models.huggingface:Model type is 'gemma3', part of the Gemma family--a BOS token will be used as Gemma underperforms without it.
+WARNING:lm_eval.api.task:[Task: wikitext] metric word_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+WARNING:lm_eval.api.task:[Task: wikitext] metric word_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+WARNING:lm_eval.api.task:[Task: wikitext] metric byte_perplexity is defined, but aggregation is not. using default aggregation=weighted_perplexity
+WARNING:lm_eval.api.task:[Task: wikitext] metric byte_perplexity is defined, but higher_is_better is not. using default higher_is_better=False
+WARNING:lm_eval.api.task:[Task: wikitext] metric bits_per_byte is defined, but aggregation is not. using default aggregation=bits_per_byte
+WARNING:lm_eval.api.task:[Task: wikitext] metric bits_per_byte is defined, but higher_is_better is not. using default higher_is_better=False
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of wikitext from None to 0
+INFO:lm_eval.api.task:Building contexts for wikitext on rank 0...
+  0%|          | 0/62 [00:00<?, ?it/s]100%|██████████| 62/62 [00:00<00:00, 962.25it/s]
+INFO:lm_eval.evaluator:Running loglikelihood_rolling requests
+  0%|          | 0/62 [00:00<?, ?it/s] 16%|█▌        | 10/62 [00:00<00:00, 98.18it/s] 42%|████▏     | 26/62 [00:00<00:00, 131.75it/s] 65%|██████▍   | 40/62 [00:00<00:00, 126.73it/s] 98%|█████████▊| 61/62 [00:00<00:00, 157.25it/s]100%|██████████| 62/62 [00:00<00:00, 145.11it/s]
+Running loglikelihood requests:   0%|          | 0/128 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/yizhenjia/anaconda3/envs/lmeval/bin/lm_eval", line 10, in <module>
+    sys.exit(cli_evaluate())
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/__main__.py", line 449, in cli_evaluate
+    results = evaluator.simple_evaluate(
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/evaluator.py", line 338, in simple_evaluate
+    results = evaluate(
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/evaluator.py", line 570, in evaluate
+    resps = getattr(lm, reqtype)(cloned_reqs)
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/models/huggingface.py", line 988, in loglikelihood_rolling
+    batch_nlls = self._loglikelihood_tokens(
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/models/huggingface.py", line 1200, in _loglikelihood_tokens
+    self._model_call(batched_inps, **call_kwargs), dim=-1
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/models/huggingface.py", line 883, in _model_call
+    return self.model(inps).logits
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/models/gemma3/modeling_gemma3.py", line 1326, in forward
+    outputs: CausalLMOutputWithPast = self.language_model(
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/transformers/models/gemma3/modeling_gemma3.py", line 958, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.03 GiB. GPU 0 has a total capacity of 79.11 GiB of which 44.43 GiB is free. Including non-PyTorch memory, this process has 34.67 GiB memory in use. Of the allocated memory 30.05 GiB is allocated by PyTorch, and 3.96 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Running loglikelihood requests:   0%|          | 0/128 [00:14<?, ?it/s]

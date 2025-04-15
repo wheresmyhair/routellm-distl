@@ -1,0 +1,43 @@
+INFO 04-10 20:50:36 [__init__.py:239] Automatically detected platform cuda.
+Traceback (most recent call last):
+  File "/home/yizhenjia/anaconda3/envs/lmeval/bin/lm_eval", line 4, in <module>
+    from lm_eval.__main__ import cli_evaluate
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/__init__.py", line 4, in <module>
+    from .evaluator import evaluate, simple_evaluate
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/evaluator.py", line 15, in <module>
+    import lm_eval.models
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/models/__init__.py", line 1, in <module>
+    from . import (
+  File "/mnt/yizhenjia3/routellm-distl/lm_eval/models/vllm_causallms.py", line 28, in <module>
+    from vllm import LLM, SamplingParams
+  File "/mnt/yizhenjia3/vllm/vllm/__init__.py", line 12, in <module>
+    from vllm.engine.arg_utils import AsyncEngineArgs, EngineArgs
+  File "/mnt/yizhenjia3/vllm/vllm/engine/arg_utils.py", line 27, in <module>
+    from vllm.reasoning import ReasoningParserManager
+  File "/mnt/yizhenjia3/vllm/vllm/reasoning/__init__.py", line 3, in <module>
+    from .abs_reasoning_parsers import ReasoningParser, ReasoningParserManager
+  File "/mnt/yizhenjia3/vllm/vllm/reasoning/abs_reasoning_parsers.py", line 9, in <module>
+    from vllm.entrypoints.openai.protocol import (ChatCompletionRequest,
+  File "/mnt/yizhenjia3/vllm/vllm/entrypoints/openai/protocol.py", line 11, in <module>
+    from fastapi import UploadFile
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/fastapi/__init__.py", line 7, in <module>
+    from .applications import FastAPI as FastAPI
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/fastapi/applications.py", line 16, in <module>
+    from fastapi import routing
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/fastapi/routing.py", line 428, in <module>
+    class APIRoute(routing.Route):
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/site-packages/fastapi/routing.py", line 436, in APIRoute
+    tags: Optional[List[Union[str, Enum]]] = None,
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/typing.py", line 309, in inner
+    return cached(*args, **kwds)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/typing.py", line 1145, in __getitem__
+    return self.copy_with(params)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/typing.py", line 1148, in copy_with
+    return _GenericAlias(self.__origin__, params,
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/typing.py", line 1019, in __init__
+    super().__init__(origin, inst=inst, name=name)
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/typing.py", line 949, in __init__
+    self._name = name
+  File "/home/yizhenjia/anaconda3/envs/lmeval/lib/python3.10/typing.py", line 989, in __setattr__
+    super().__setattr__(attr, val)
+KeyboardInterrupt

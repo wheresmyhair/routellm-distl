@@ -1,0 +1,20 @@
+INFO 04-10 07:59:57 [__init__.py:239] Automatically detected platform cuda.
+INFO:lm_eval.__main__:Selected Tasks: ['openbookqa']
+INFO:lm_eval.evaluator:Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+INFO:lm_eval.evaluator:Initializing hf model, with arguments: {'pretrained': 'meta-llama/Llama-3.1-8B-Instruct'}
+INFO:lm_eval.models.huggingface:Using device 'cuda'
+INFO:lm_eval.models.huggingface:Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.43s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.18s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.30it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.08it/s]
+WARNING:lm_eval.evaluator:Overwriting default num_fewshot of openbookqa from None to 0
+INFO:lm_eval.api.task:Building contexts for openbookqa on rank 0...
+  0%|          | 0/500 [00:00<?, ?it/s] 78%|███████▊  | 392/500 [00:00<00:00, 3915.00it/s]100%|██████████| 500/500 [00:00<00:00, 3930.71it/s]
+INFO:lm_eval.evaluator:Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/2000 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/2000 [00:00<27:58,  1.19it/s]Running loglikelihood requests:   8%|▊         | 158/2000 [00:00<00:08, 219.06it/s]Running loglikelihood requests:  15%|█▌        | 309/2000 [00:01<00:03, 427.63it/s]Running loglikelihood requests:  26%|██▌       | 515/2000 [00:01<00:02, 736.74it/s]Running loglikelihood requests:  40%|███▉      | 795/2000 [00:01<00:01, 1035.62it/s]Running loglikelihood requests:  56%|█████▌    | 1111/2000 [00:01<00:00, 1327.88it/s]Running loglikelihood requests:  71%|███████   | 1422/2000 [00:01<00:00, 1605.79it/s]Running loglikelihood requests:  88%|████████▊ | 1770/2000 [00:01<00:00, 1967.07it/s]Running loglikelihood requests: 100%|██████████| 2000/2000 [00:01<00:00, 1101.56it/s]
+INFO:lm_eval.loggers.evaluation_tracker:Saving results aggregated
+INFO:lm_eval.loggers.evaluation_tracker:Saving per-sample results for: openbookqa
+hf (pretrained=meta-llama/Llama-3.1-8B-Instruct), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 128
+|  Tasks   |Version|Filter|n-shot| Metric |   |Value|   |Stderr|
+|----------|------:|------|-----:|--------|---|----:|---|-----:|
+|openbookqa|      1|none  |     0|acc     |↑  |0.338|±  |0.0212|
+|          |       |none  |     0|acc_norm|↑  |0.430|±  |0.0222|
+
